@@ -72,34 +72,34 @@
      id="layer2"
      inkscape:label="Capa 2">
     <rect
-       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:4.81776571;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:5.58900928;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect829"
-       width="39.119156"
-       height="18.963043"
-       x="148.73691"
-       y="76.416077"
-       transform="matrix(0.93629498,0.35121461,-0.36028886,0.93284079,0,0)" />
+       width="40.899902"
+       height="24.409203"
+       x="137.3593"
+       y="55.152557"
+       transform="matrix(0.89552953,0.44500208,-0.27990153,0.96002871,0,0)" />
     <rect
        style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:2.82700014;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect831"
        width="9.827384"
        height="40.216663"
-       x="101.90238"
-       y="123.52261" />
+       x="97.744644"
+       y="114.07321" />
     <rect
-       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:2.82700014;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:4.67162848;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect831-8"
-       width="9.827384"
+       width="26.836313"
        height="40.216663"
-       x="125.86606"
-       y="-21.469044" />
+       x="108.85713"
+       y="-2.9482105" />
     <rect
-       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:4.81776571;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#32cd32;fill-opacity:1;stroke:none;stroke-width:5.59227324;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect829-09"
-       width="39.119156"
-       height="18.963045"
-       x="4.7439394"
-       y="154.43283"
-       transform="matrix(0.91225599,-0.40962056,0.40074386,0.91619013,0,0)" />
+       width="41.458729"
+       height="24.108322"
+       x="16.662624"
+       y="151.37303"
+       transform="matrix(0.86077614,-0.50898374,0.3152158,0.94902002,0,0)" />
   </g>
 </svg>

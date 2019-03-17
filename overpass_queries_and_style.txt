@@ -57,4 +57,29 @@ out body;
 >;
 out skel qt;
 
+
+
+=================
+
+CODI MAPA
+
+   var icon_crosing_no = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png';
+   var icon_unmarked = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png';
+var icon_uncontrolled = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png';
+var icon_traffic_signals = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_traffic_lights.png';
+   var icon_obstacle_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png';
+   var icon_shop_no_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png';
+   var icon_shop_yes_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png';
+   var icon_shop_limited_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png';
+var icon_handrails_left = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/handrails_left.png';
+var icon_handrails_center = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/handrails_center.png';
+var icon_handrails_right = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/handrails_right.png';
+var icon_kerb_flush = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/kerb_flush.png';
+var icon_kerb_lowered = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/kerb_lowered.png';
+var icon_kerb_raised = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/kerb_raised.png';
+var icon_ramp = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/ramp.png';
+var icon_ramp_stroller = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/ramp_stroller.png';
+var icon_ramp_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/ramp_wheelchair.png';
+
+
  

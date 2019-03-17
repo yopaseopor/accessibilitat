@@ -36,13 +36,13 @@
    var icon_ESR2 = 'https://github.com/yopaseopor/beta_style_josm/raw/master/traffic_signs_EUR/ES/ES_R2.png';
 
    var icon_unmarked = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png';
-   var icon_obstacle_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png';
-   var icon_shop_no_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png';
+
+
    var icon_shop_yes_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png';
    var icon_shop_limited_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png';
 
    var setupMap = function () {
-     mymap = L.map('mapid').setView([41.43925, 2.21792], 15);
+     mymap = L.map('mapid').setView([41.43925, 2.21792], 17);
      var osmUrl='https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png';
      var osmAttrib='&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
      var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 20, attribution: osmAttrib});
@@ -57,7 +57,7 @@
      // gather results
      (
        // query part for: “crossing=unmarked”
-       node["traffic_sign:forward"](area.searchArea);
+       node["obstacle:wheelchair=yes"](area.searchArea);
 	   
 	   node["wheelchair"](area.searchArea);
        // query part for: “"obstacle:wheelchair"=yes”
@@ -92,47 +92,21 @@ if (feature.properties.tags['wheelchair'] == "no") {
                           popupAnchor:  [1, -24],
                           iconUrl: icon_shop_no_wheelchair
                 });
-				
-			} else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2a" && "side=right") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [8, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2a
-                });
-
-            } else if (feature.properties.tags['traffic_sign:forward'] == "ES:B2a" && "side=left") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [16, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2a
-                });
-				
-            } else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2a" && "side=left") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [16, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2a
-             });
-				
-
-
               }
 			  
 			  
 			  //////////////////////////////////////////////////////////////
 
 			//ES:B2d
-      var icon_ES_B2d = 'https://github.com/yopaseopor/beta_style_josm/raw/master/traffic_signs_EUR/ES/ES_B2d.png';			
+   var icon_obstacle_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png';		
 if (feature.properties.tags['traffic_sign:forward'] == "ES:B2d" && "side=right") {
                 icon = L.icon({
                           iconSize: [16, 16],
                           iconAnchor: [8, 0],
                           popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2d
+                          iconUrl: icon_obstacle_wheelchair
                 });
+              }
 				
 			} else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2d" && "side=right") {
                 icon = L.icon({

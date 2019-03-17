@@ -1930,25 +1930,7 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:S572" && "side=right"
           onEachFeature: function (feature, layer) {
             if (feature.properties.tags.wheelchair) {
               layer.bindPopup(feature.properties.tags.wheelchair);
-            }
-          }
-        }).addTo(mymap);
-				mymap.fitBounds( geoLayer.getBounds() );
-							},
-      error: function (xhr, status, data) {
-        console.log(xhr, status, data);
-      }
-		});
-   };
-				
-				          
-						              if (icon) {
-              return L.marker(latlng, {icon: icon});
-            }
-
-          },
-						  onEachFeature: function (feature, layer) {
-            if (feature.properties.tags.name) {
+			   } else if (feature.properties.tags.name) {
               layer.bindPopup(feature.properties.tags.name);
             }
           }

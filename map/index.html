@@ -58,6 +58,8 @@
      (
        // query part for: “crossing=unmarked”
        node["traffic_sign:forward"](area.searchArea);
+	   
+	   node["wheelchair"](area.searchArea);
        // query part for: “"obstacle:wheelchair"=yes”
        node["traffic_sign:backward"](area.searchArea);
      );

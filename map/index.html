@@ -1931,14 +1931,9 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:S572" && "side=right"
             if (feature.properties.tags.wheelchair) {
               layer.bindPopup(feature.properties.tags.wheelchair);
             }
-		              if (feature.properties.tags.name) {
-              layer.bindPopup(feature.properties.tags.name);
-            }
           }
-		  
         }).addTo(mymap);
 				mymap.fitBounds( geoLayer.getBounds() );
-
 				
 				//geoList.reload( geoLayer );
 

@@ -1935,7 +1935,13 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:S572" && "side=right"
         }).addTo(mymap);
 				mymap.fitBounds( geoLayer.getBounds() );
 				
-				          onEachFeature: function (feature, layer) {
+				          
+						              if (icon) {
+              return L.marker(latlng, {icon: icon});
+            }
+
+          },
+						  onEachFeature: function (feature, layer) {
             if (feature.properties.tags.name) {
               layer.bindPopup(feature.properties.tags.name);
             }

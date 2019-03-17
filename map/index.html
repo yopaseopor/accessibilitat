@@ -1934,6 +1934,12 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:S572" && "side=right"
           }
         }).addTo(mymap);
 				mymap.fitBounds( geoLayer.getBounds() );
+							},
+      error: function (xhr, status, data) {
+        console.log(xhr, status, data);
+      }
+		});
+   };
 				
 				          
 						              if (icon) {

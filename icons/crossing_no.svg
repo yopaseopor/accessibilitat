@@ -16,12 +16,111 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
-   sodipodi:docname="wheelchair_limited_shop.svg"
-   inkscape:export-filename="C:\a\GitHub\accessibilitat\icons\wheelchair_limited_shop.png"
+   sodipodi:docname="crossing_no.svg"
+   inkscape:export-filename="C:\a\GitHub\accessibilitat\icons\crossing_no.png"
    inkscape:export-xdpi="96"
    inkscape:export-ydpi="96">
   <defs
-     id="defs2" />
+     id="defs2">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2097">
+      <g
+         inkscape:label="Clip"
+         id="use2099">
+        <rect
+           transform="matrix(0.79157642,-0.61107019,0.61552065,0.78812075,0,0)"
+           y="158.95056"
+           x="-9.139658"
+           height="40.184082"
+           width="9.83358"
+           id="rect2106"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           inkscape:transform-center-x="16.677751"
+           transform="matrix(0.79157642,-0.61107019,0.61552065,0.78812075,0,0)"
+           y="159.1011"
+           x="5.3000627"
+           height="40.184082"
+           width="9.83358"
+           id="rect2108"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           transform="matrix(0.79157642,-0.61107019,0.61552065,0.78812075,0,0)"
+           y="159.48714"
+           x="19.365145"
+           height="40.184082"
+           width="9.83358"
+           id="rect2110"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+        <rect
+           transform="matrix(0.79157642,-0.61107019,0.61552065,0.78812075,0,0)"
+           y="160.36975"
+           x="33.762348"
+           height="40.184082"
+           width="9.83358"
+           id="rect2112"
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      </g>
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath2151">
+      <g
+         inkscape:label="Clip"
+         id="use2153">
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2162"
+           width="9.83358"
+           height="40.184082"
+           x="77.74276"
+           y="117.27444"
+           transform="matrix(0.99999985,5.4847265e-4,0.00508607,0.99998707,0,0)" />
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2164"
+           width="9.83358"
+           height="40.184082"
+           x="92.18248"
+           y="117.42499"
+           transform="matrix(0.99999985,5.4847265e-4,0.00508607,0.99998707,0,0)"
+           inkscape:transform-center-x="16.677751" />
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2166"
+           width="9.83358"
+           height="40.184082"
+           x="106.24756"
+           y="117.81102"
+           transform="matrix(0.99999985,5.4847265e-4,0.00508607,0.99998707,0,0)" />
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2168"
+           width="9.83358"
+           height="40.184082"
+           x="120.65053"
+           y="117.55968"
+           transform="matrix(0.99999985,5.4847265e-4,0.00508607,0.99998707,0,0)" />
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2170"
+           width="9.83358"
+           height="40.184082"
+           x="63.555397"
+           y="117.03975"
+           transform="matrix(0.99999985,5.4847331e-4,0.00508607,0.99998707,0,0)" />
+        <rect
+           style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:2.82674551;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+           id="rect2172"
+           width="9.83358"
+           height="40.184082"
+           x="134.98831"
+           y="117.94551"
+           transform="matrix(0.99999985,5.4847331e-4,0.00508607,0.99998707,0,0)" />
+      </g>
+    </clipPath>
+  </defs>
   <sodipodi:namedview
      id="base"
      pagecolor="#ffffff"
@@ -29,9 +128,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-31.714286"
-     inkscape:cy="259.47996"
+     inkscape:zoom="1"
+     inkscape:cx="289.93673"
+     inkscape:cy="330.07101"
      inkscape:document-units="mm"
      inkscape:current-layer="layer2"
      showgrid="false"
@@ -72,19 +171,12 @@
      id="layer2"
      inkscape:label="Capa 2">
     <rect
-       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:4.67162848;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect831-8"
-       width="26.836313"
-       height="40.216663"
-       x="108.85713"
-       y="-2.9482105" />
-    <rect
-       style="opacity:1;fill:#ff6600;fill-opacity:1;stroke:none;stroke-width:13.00448895;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       id="rect829-09"
-       width="89.714523"
-       height="60.246265"
-       x="33.43317"
-       y="159.82236"
-       transform="matrix(0.80070005,-0.59906546,0.25390499,0.96722916,0,0)" />
+       style="opacity:1;fill:#ff0000;fill-opacity:1;stroke:none;stroke-width:6.27112436;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect831-6-8"
+       width="21.756609"
+       height="89.390602"
+       x="113.93965"
+       y="69.136902"
+       transform="matrix(0.99999985,5.5145974e-4,0.00505852,0.99998721,0,0)" />
   </g>
 </svg>

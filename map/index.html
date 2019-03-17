@@ -83,7 +83,7 @@
             //console.log(feature);
             var icon = null;
 ////////TRAFFIC SIGNS CODE////////////////////
-			//ES:B2a
+			//wheelchair no
          var icon_shop_no_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png';			
 if (feature.properties.tags['wheelchair'] == "no") {
                 icon = L.icon({
@@ -91,6 +91,36 @@ if (feature.properties.tags['wheelchair'] == "no") {
                           iconAnchor: [8, 0],
                           popupAnchor:  [1, -24],
                           iconUrl: icon_shop_no_wheelchair
+                });
+              }
+			  
+			  
+			  //////////////////////////////////////////////////////////////
+			  
+			//wheelchair yes
+         var icon_shop_yes_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png';			
+if (feature.properties.tags['wheelchair'] == "no") {
+                icon = L.icon({
+                          iconSize: [16, 16],
+                          iconAnchor: [8, 0],
+                          popupAnchor:  [1, -24],
+                          iconUrl: icon_shop_yes_wheelchair
+                });
+              }
+			  
+			  
+			  //////////////////////////////////////////////////////////////
+			  
+			  //////////////////////////////////////////////////////////////
+			  
+			//wheelchair limited
+         var icon_shop_limited_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png';			
+if (feature.properties.tags['wheelchair'] == "limited") {
+                icon = L.icon({
+                          iconSize: [16, 16],
+                          iconAnchor: [8, 0],
+                          popupAnchor:  [1, -24],
+                          iconUrl: icon_shop_limited_wheelchair
                 });
               }
 			  

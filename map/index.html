@@ -1928,8 +1928,8 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:S572" && "side=right"
 
           },
           onEachFeature: function (feature, layer) {
-            if (feature.properties.tags['wheelchair'] == 'no') {
-              layer.bindPopup(feature.properties.tags['wheelchair'] == 'no');
+            if (feature.properties.tags.wheelchair) {
+              layer.bindPopup(feature.properties.tags.wheelchair);
             }
           }
         }).addTo(mymap);

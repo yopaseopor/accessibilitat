@@ -84,13 +84,13 @@
             var icon = null;
 ////////TRAFFIC SIGNS CODE////////////////////
 			//ES:B2a
-      var icon_ES_B2a = 'https://github.com/yopaseopor/beta_style_josm/raw/master/traffic_signs_EUR/ES/ES_B2a.png';			
-if (feature.properties.tags['traffic_sign:forward'] == "ES:B2a" && "side=right") {
+         var icon_shop_no_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png';			
+if (feature.properties.tags['wheelchair'] == "no") {
                 icon = L.icon({
                           iconSize: [16, 16],
                           iconAnchor: [8, 0],
                           popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2a
+                          iconUrl: icon_shop_no_wheelchair
                 });
 				
 			} else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2a" && "side=right") {

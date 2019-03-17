@@ -99,7 +99,7 @@ if (feature.properties.tags['wheelchair'] == "no") {
 
 			//ES:B2d
    var icon_obstacle_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png';		
-if (feature.properties.tags['traffic_sign:forward'] == "ES:B2d" && "side=right") {
+if (feature.properties.tags['obstacle:wheelchair'] == "yes") {
                 icon = L.icon({
                           iconSize: [16, 16],
                           iconAnchor: [8, 0],
@@ -107,35 +107,7 @@ if (feature.properties.tags['traffic_sign:forward'] == "ES:B2d" && "side=right")
                           iconUrl: icon_obstacle_wheelchair
                 });
               }
-				
-			} else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2d" && "side=right") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [8, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2d
-                });
-
-            } else if (feature.properties.tags['traffic_sign:forward'] == "ES:B2d" && "side=left") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [16, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2d
-                });
-				
-            } else if (feature.properties.tags['traffic_sign:backward'] == "ES:B2d" && "side=left") {
-                icon = L.icon({
-                          iconSize: [16, 16],
-                          iconAnchor: [16, 0],
-                          popupAnchor:  [1, -24],
-                          iconUrl: icon_ES_B2d
-             });
-				
-
-
-              }
-			  
+			
 			  
 			  //////////////////////////////////////////////////////////////
 			  			//ES:B3c

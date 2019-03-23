@@ -39,21 +39,26 @@
 
 
    var setupMap = function () {
-     mymap = L.map('mapid').setView([41.43925, 2.21792], 18);
+   // MODIFICAR where goes the map and zoom , dónde enfoca el mapa y zoom , on enfoca el mapa i zoom
+     mymap = L.map('mapid').setView([41.43925, 2.21792], 18); 
+	 // MODIFICAR layer . get from github example leaflet layers | Mapa : sacar de github example leaflet
      var osmUrl='https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png';
+	 // MODIFICAR atribution . Change the atributtion in a correct way, it depens of the layer. | Cambia la atribución del mapa según corresponda. | Canvia l'atribució del mapa segons correspongui.
      var osmAttrib='&copy; Openstreetmap France | &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>';
+	 //MODIFICAR ZOOMS 
      var osm = new L.TileLayer(osmUrl, {minZoom: 8, maxZoom: 20, attribution: osmAttrib});
      mymap.addLayer(osm);
      geoLayer = L.geoJson().addTo(mymap);
    };
    var getData = function () {
      var query = `
+	 //MODIFICAR TIMEOUT | Límite del tiempo de espera , más datos más tiempo de espera | Límit del temps d'espera, més dades més temps d'espera.
      [out:json][timeout:60];
-     // fetch area “Vilanova  i la Geltrú” to search in
+     // fetch area “Vilanova  i la Geltrú” to search in Area code 3600+ id Relation town is |   Código área 3600+ id relación municipio | Codi àrea 3600+ id relació municipi
      area(3600347954)->.searchArea;
      // gather results
      (
-       // query part for: “crossing=unmarked”
+       // query part for: “crossing=unmarked” nodes["key:subkey"="value"] Extracted from overpass-turbo | nodos["clave:subclave"="valor"] extraído de overpass-turbo | nodes["clau:subclau"=valor"] Extret d'overpass turbo
 	   node["obstacle:wheelchair"="yes"](area.searchArea);
 	   
 	   node["wheelchair"](area.searchArea);
@@ -79,8 +84,16 @@
           pointToLayer: function(feature, latlng) {
             //console.log(feature);
             var icon = null;
-////////TRAFFIC SIGNS CODE////////////////////
-			//wheelchair no
+////////ICONS  CODE////////////////////
+			//var name_of_the_var = 'url';
+			//if (feature.properties.tags['key'] == "value") {
+			//icon = L.icon({
+            //iconSize: [16, 16],                       size of the icon | medidas del icono | mides de la icona
+            //iconAnchor: [8, 0],                       place of the icon  | situación del icono | situació de la icona
+            //popupAnchor:  [1, -24],                   place of the name | situación del bocadillo | situació de la bafarada
+            //iconUrl: icon_shop_no_wheelchair          url var where is the icon | var con la dirección del icono | var with the icon direction
+            //    });
+            //  }
          var icon_shop_no_wheelchair = 'https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png';			
 if (feature.properties.tags['wheelchair'] == "no") {
                 icon = L.icon({

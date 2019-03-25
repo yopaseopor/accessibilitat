@@ -202,8 +202,8 @@ function layerdef(type){
 			externalGraphic:url,
 			graphicWidth:16,
 			graphicHeight:16,
-			rotation:125
-		});
+			graphicXOffset: 4
+			});
 	}
 	
 		function tsforward(url){
@@ -254,8 +254,8 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=node[wheelchair=designated](bbox);out+skel;",
-				name="#c#&nbspwheelchair=designated",
+				QURL + "?data=node[capacity:disabled=1](bbox);out+skel;",
+				name="#c#&nbspPlaça aparcament",
 				defaultPoint("blue"),
 				false
 			),

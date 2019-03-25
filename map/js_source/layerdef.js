@@ -262,14 +262,14 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
-				name="#ex#&nbspMobilitat limitada<hr>",
+				name="#ex#&nbspMobilitat limitada",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#ex#&nbspObstacle per a la mobilitat<hr>",
+				name="#ex#&nbspObstacle per a la mobilitat",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
 				false
 			),

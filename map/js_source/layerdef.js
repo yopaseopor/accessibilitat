@@ -255,8 +255,8 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
-				name="#c#&nbspPlaça aparcament",
-				defaultPoint("blue"),
+				name="#ex#&nbspPlaça aparcament",
+			defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/capacity_disabled.png"),
 				false
 			),
 

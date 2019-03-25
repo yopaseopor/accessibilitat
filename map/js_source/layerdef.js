@@ -240,16 +240,16 @@ function layerdef(type){
 			make_layer(QURL + "?data=node[kerb=no](bbox);out+skel;", "#ffff00", name="#c#&nbspkerb=no<hr>", 3, false),
 */
 			make_layer(
-				QURL + "?data=node[wheelchair=yes](bbox);out+skel;",
-				name="#ex#&nbspwheelchair=yes",
-				defaultExtPoint("https://image.flaticon.com/icons/png/512/9/9285.png"),
+				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=sí",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
 				false
 			),
 
 			make_layer(
-				QURL + "?data=node[wheelchair=no](bbox);out+skel;",
-				name="#c#&nbspwheelchair=no",
-				defaultPoint("red"),
+				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
+				name="#c#&nbspAdaptat=no",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
 				false
 			),
 
@@ -261,9 +261,9 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=node[wheelchair=limited](bbox);out+skel;",
+				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
 				name="#c#&nbspwheelchair=limited<hr>",
-				defaultPoint("yellow"),
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
 				false
 			),
 

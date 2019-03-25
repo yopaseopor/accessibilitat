@@ -248,7 +248,7 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
-				name="#c#&nbspAdaptat=no",
+				name="#ex#&nbspAdaptat=no",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
 				false
 			),

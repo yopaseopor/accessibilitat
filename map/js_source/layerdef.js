@@ -262,48 +262,48 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
-				name="#ex#&nbspwheelchair=limited<hr>",
+				name="#ex#&nbspMobilitat limitada<hr>",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#ex#&nbspobstacle:wheelchair=yes<hr>",
+				name="#ex#&nbspObstacle per a la mobilitat<hr>",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
-				name="#ex#&nbspcrossing=traffic_signals",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_traffic_lights.png"),
+				name="#ex#&nbspPas de vianant amb semàfor",
+				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node[crossing=no](bbox);out+skel;",
-				name="#c#&nbspcrossing=no",
+				name="#ex#&nbspProhibit passar",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
-				name="#ex#&nbspcrossing=uncontrolled",
+				name="#ex#&nbspPas de vianants",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
 				false
 ),
 		make_layer(
 				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
-				name="#ex#&nbspcrossing=unmarked",
+				name="#ex#&nbspPassos no senyalitzats",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
 				false
 			),
 					//highway=cycleway
 			make_layer(
 				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
-				name="#l#highway=cycleway",
+				name="#l#Voreres amb problemes",
 				defaultSolidLine("red"),
 				false,
 			),

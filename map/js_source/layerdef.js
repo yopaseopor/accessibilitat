@@ -262,15 +262,15 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
-				name="#c#&nbspwheelchair=limited<hr>",
+				name="#ex#&nbspwheelchair=limited<hr>",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#c#&nbspobstacle:wheelchair=yes<hr>",
-				defaultPoint("black"),
+				name="#ex#&nbspobstacle:wheelchair=yes",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
 				false
 			),
 
@@ -296,15 +296,8 @@ function layerdef(type){
 ),
 		make_layer(
 				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
-				name="#c#&nbspcrossing=unmarked<hr>",
-				{
-					strokeColor:"white",
-					strokeOpacity:0.9,
-					strokeWidth:2,
-					pointRadius:4,
-					fillColor:"red",
-					fillOpacity:0.75
-				},
+				name="#ex#&nbspcrossing=unmarked",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
 				false
 			),
 					//highway=cycleway

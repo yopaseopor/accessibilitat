@@ -277,7 +277,7 @@ function layerdef(type){
 			make_layer(
 				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
 				name="#ex#&nbspcrossing=traffic_signals",
-				defaultExtPoint("http://icons.iconarchive.com/icons/google/noto-emoji-travel-places/1024/42571-vertical-traffic-light-icon.png"),
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_traffic_lights.png"),
 				false
 			),
 

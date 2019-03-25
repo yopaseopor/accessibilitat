@@ -269,7 +269,7 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#ex#&nbspobstacle:wheelchair=yes",
+				name="#ex#&nbspobstacle:wheelchair=yes<hr>",
 				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
 				false
 			),
@@ -284,14 +284,14 @@ function layerdef(type){
 			make_layer(
 				QURL + "?data=node[crossing=no](bbox);out+skel;",
 				name="#c#&nbspcrossing=no",
-				defaultPoint("red"),
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
 				name="#ex#&nbspcrossing=uncontrolled",
-				defaultExtPoint("https://d30y9cdsu7xlg0.cloudfront.net/png/35167-200.png"),
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
 				false
 ),
 		make_layer(

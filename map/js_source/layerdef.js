@@ -254,7 +254,7 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=node[capacity:disabled=1](bbox);out+skel;",
+				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
 				name="#c#&nbspPlaça aparcament",
 				defaultPoint("blue"),
 				false

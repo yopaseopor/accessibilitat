@@ -101,9 +101,6 @@ function init(){
 		layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik",{'attribution': '© <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> Contributors<br>Cartography licensed as CC-BY-SA<br>Overlay data licensed under ODbL '});
 		map.addLayer(layerMapnik);
 		
-		var OSMfr = new OpenLayers.Layer.XYZ("OSM France","https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png",{'attribution': '© Openstreetmap France | &copy; <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL '}); 
-		map.addLayer(OSMfr);
-		
 		var BW = new OpenLayers.Layer.XYZ("Mapnik (B&W)","https://toolserver.org/tiles/bw-mapnik/${z}/${x}/${y}.png",{'attribution': '© <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL '}); 
 		map.addLayer(BW);
 		

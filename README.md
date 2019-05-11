@@ -10,7 +10,7 @@ Accessibilitat és una prova de concepte sobre el mapa personalitzable a OpenStr
 # Renderització de dades
 ## Estil
 ## Mapa
-Mapa basat en https://wiki.openstreetmap.org/wiki/Bicycle_tags_map.
+Mapa basat en https://wiki.openstreetmap.org/wiki/Bicycle_tags_map 
 
 El mapa ens permet la mostra d'elements determinats personalitzables tenint com a fons varis mapes diferents.
 Per poder-ho fer hem de seguir les instruccions que trobarem en aquests arxius (poden estar en anglès) cercant la cadena "MODIFICAR"

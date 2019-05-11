@@ -485,7 +485,7 @@ function layerdef(type){
 
 		]);
 
-*/	
+	
 			// OfficiÃ«le LF routes van het Fietsplatform
 			var LFRoutes = new OpenLayers.Layer.WMS("<img style='vertical-align: middle;background-color: green;' src='img/line.gif'>&nbspOfficial LF routes (routedatabank.nl)",
 
@@ -565,9 +565,9 @@ function layerdef(type){
 			
 			make_layer(QURL + "?data=(way[name~'^Fietspad|^fietspad|^pad$|^Pad$|cycleway|^path$|^Path$'](bbox);node(w);way[highway=cycleway][name!~'.'](bbox);node(w););out+skel;", "#ffff00",name="#l#cycleway/path without<br>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspstreetname (address search)",4, false),
 */
-			]);
-	}
-	
+//			]);
+//	}
+
 
 
 }

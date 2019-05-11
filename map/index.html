@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8" lang="en">
-  <title>Test tags on OSM</title>
+  <title>Mapa d'accessibilitat OSM</title>
   
-  <!-- MODIFICAR > Modify <title> -->
+  <!-- MODIFICAR  <title> -->
   
 <!-- oorspronkelijke js isi verplaatst naar lokale kopie! 
    <script src="https://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
@@ -108,8 +108,13 @@ function init(){
 		map.addLayer(BW);
 		
 		var cycle = new OpenLayers.Layer.OSM("OpenCycleMap", ["https://a.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb", "https://b.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb", "https://c.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb"], { displayOutsideMaxExtent: true,numZoomLevels: 19, attribution: 'Open Cyclemap '}); map.addLayer(cycle);
+		
+		var OSMFr = new OpenLayers.Layer.OSM("OSMFr", ["https://a.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png", "https://b.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png", "https://c.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png"], { displayOutsideMaxExtent: true,numZoomLevels: 20, attribution: '&copy; Openstreetmap France | © <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL  '}); map.addLayer(OSMFr);
+		
+		var OMS = new OpenLayers.Layer.XYZ("OpenMapSurfer","https://maps.heigit.org/openmapsurfer/tiles/roads/webmercator/${z}/${x}/${y}.png",{'attribution': '<a href="http://giscience.uni-hd.de/">GIScience Research Group @ University of Heidelberg</a> <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL '}); 
+		map.addLayer(OMS);
 
-		var arcgis = new OpenLayers.Layer.XYZ("ArcGIS World Topo","https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/${z}/${y}/${x}",{'attribution': 'Cartography © <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" target="_blank">ArcGIS</a><br>Overlay data OpenStreetMap contributors, licensed under ODbL '}); 
+		var arcgis = new OpenLayers.Layer.XYZ("World Topo (ArcGIS)","https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/${z}/${y}/${x}",{'attribution': 'Cartography © <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" target="_blank">ArcGIS</a><br>Overlay data OpenStreetMap contributors, licensed under ODbL '}); 
 		map.addLayer(arcgis);
 
 		var positron = new OpenLayers.Layer.XYZ("Positron (CartoDB)","https://s.basemaps.cartocdn.com/light_all/${z}/${x}/${y}.png",{'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'});
@@ -117,6 +122,8 @@ function init(){
 		
 		var darkmatter = new OpenLayers.Layer.XYZ("Dark Matter (CartoDB)","https://s.basemaps.cartocdn.com/dark_all/${z}/${x}/${y}.png",{'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'});
 		map.addLayer(darkmatter);
+		
+		
 		
 		//Other providers
 					
@@ -126,12 +133,13 @@ function init(){
 		var apiKey = "AptVQmHtirBWrgdEikX-NSLFgXz-Wdn_NeGBO1o-T1o0hMo4zNvWtinQTB0yFExf";
 		var aerial = new OpenLayers.Layer.Bing({
     key: apiKey,
-    type: "Aerial"}); //MODIFICAR you can change it for "Road" (Bing Road map), "AerialWithLabels" (Bing aerial with labels) and "Aerial" (Bing aerial)
+    type: "AerialWithLabels"}); //MODIFICAR you can change it for "Road" (Bing Road map), "AerialWithLabels" (Bing aerial with labels) and "Aerial" (Bing aerial)
+	name: "Aerial With Labels (Bing)" //MODIFICAR
 	map.addLayer(aerial);
 			
 		//Google Sat
 		
-		googlesat = new OpenLayers.Layer.XYZ("Google Sat",
+		googlesat = new OpenLayers.Layer.XYZ("Sat (Google)",
                     ["https://mt0.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
 					"https://mt1.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
 					"https://mt2.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",

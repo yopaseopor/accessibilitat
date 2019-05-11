@@ -11,7 +11,55 @@
 // transparantie = 0-1 transparantie van de lijn
 //
 //=====================
-// ====================
+/*
+//	function defaultSolidLine(color){   //	function nomfunciólínia
+//		return(
+//		{
+//			strokeColor:color,
+//			strokeOpacity:0.7, // opacitat entre 0 i 1
+//			strokeWidth:2,     //amplada traç
+//			strokeLinecap: "square", //tipus de línia (“butt”, “round”, or “square”).
+//			strokeDashstyle: "6 10" //discontinuitats en la línia . Si no hi ha esborrar línia tenint en compte que la darrera opció no porta coma
+//		});
+//	}
+//==============================
+	function defaultPoint(color){ //function nomfunciópunt 
+		return (
+		{
+			strokeColor:color,
+			strokeOpacity:0.7, // opacitat entre 0 i 1
+			strokeWidth:2,     //amplada traç
+			pointRadius:5,     //radi del punt
+			fillColor:"white", //color en anglès per omplir el cercle
+			fillOpacity:0.75 //opacitat de l'omplenament del cercle entre 0 i 1
+		});
+	}
+======================================
+	function defaulturlpoint(url){   //function iconaexteriorpunt
+		return (
+		{
+			externalGraphic:url, //adreça url de la icona
+			graphicWidth:20,     //mida amplada icona
+			graphicHeight:20,    //mida alçada icona
+			graphicOpacity:0.75, //opacitat icona
+			graphicXOffset: -4, // píxels dreta/esquerra del punt
+			graphicYOffset: 0,  //píxels amunt/avall del punt 
+			rotation:180        //rotació icona
+		});
+	}
+	
+	
+
+
+	
+*/
+
+
+
+
+
+
+
 //	
 //	COPIAR	if (type == "nameofthe td id"){                         of index.html
 //  COPIAR	map.addLayers([
@@ -58,14 +106,7 @@
 //=====================
 function layerdef(type){
 
-	/*
-	 * {
-	 * 	strokeColor: "red",
-	 * 	strokeOpacity: 0.9,
-	 * 	strokeWidth: 5,
-	 * 	strokeLinecap: "square",
-	 * 	strokeDashstyle: "1 0"
-	 */
+//MODIFICAR
 	function defaultSolidLine(color){
 		return(
 		{
@@ -87,19 +128,6 @@ function layerdef(type){
 		});
 	}
 
-
-
-	/*
-	 * base Point Parameters:
-	 * {
-	 * 	strokeColor:"#FFFFFF",
-	 * 	strokeOpacity:0.9,
-	 * 	strokeWidth:3,
-	 * 	pointRadius:3
-	 * 	fillColor: "white",
-	 * 	fillOpacity: 0.75,
-	 * }
-	 */
 	function defaultPoint(color){
 		return (
 		{
@@ -112,18 +140,7 @@ function layerdef(type){
 		});
 	}
 
-	/*
-	 * external Point Parameters:
-	 * {
-	 * 	externalGraphic: "path/to/icon.png",
-	 * 	graphicWidth: 6,
-	 * 	graphicHeight:6,
-	 * 	graphicOpacity: 0.75,
-	 * 	graphicXOffset: 0,
-	 * 	graphicYOffset: 0,
-	 * 	rotation: 0
-	 * }
-	 */
+
 	function defaultExtPoint(url){
 		return (
 		{
@@ -134,7 +151,7 @@ function layerdef(type){
 			});
 	}
 	
-		function tsforward(url){
+/*		function tsforward(url){
 		return (
 		{
 			externalGraphic:url,
@@ -158,15 +175,12 @@ function layerdef(type){
 		});
 	}
 	
-	if (type == "test"){
+*/
+	
+	if (type == "test"){ //MODIFICAR 
 		
 		map.addLayers([
-/*			
-			make_layer(QURL + "?data=node[kerb=lowered](bbox);out+skel;", "#66ff66", name="#c#&nbspkerb=lowered", 3, false),
-			make_layer(QURL + "?data=node[kerb=raised](bbox);out+skel;", "#ff3300", name="#c#&nbspkerb=raised", 3, false),
-			make_layer(QURL + "?data=node[kerb=flush](bbox);out+skel;", "#0066ff", name="#c#&nbspkerb=flush", 3, false),
-			make_layer(QURL + "?data=node[kerb=no](bbox);out+skel;", "#ffff00", name="#c#&nbspkerb=no<hr>", 3, false),
-*/
+
 			make_layer(
 				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
 				name="#ex#&nbspAdaptat=sí",
@@ -237,7 +251,42 @@ function layerdef(type){
 			),
 			 
 			]);
-	}	
+	}
+}
+//OLD CODE
+
+	/*
+	 * external Point Parameters:
+	 * {
+	 * 	externalGraphic: "path/to/icon.png",
+	 * 	graphicWidth: 6,
+	 * 	graphicHeight:6,
+	 * 	graphicOpacity: 0.75,
+	 * 	graphicXOffset: 0,
+	 * 	graphicYOffset: 0,
+	 * 	rotation: 0
+	 * }
+	 */
+	 	/*
+	 * base Point Parameters:
+	 * {
+	 * 	strokeColor:"#FFFFFF",
+	 * 	strokeOpacity:0.9,
+	 * 	strokeWidth:3,
+	 * 	pointRadius:3
+	 * 	fillColor: "white",
+	 * 	fillOpacity: 0.75,
+	 * }
+	 */
+	 
+	 	/*
+	 * {
+	 * 	strokeColor: "red",
+	 * 	strokeOpacity: 0.9,
+	 * 	strokeWidth: 5,
+	 * 	strokeLinecap: "square",
+	 * 	strokeDashstyle: "1 0"
+	 */	
 
 /*	if (type == "test"){
 		
@@ -567,10 +616,10 @@ function layerdef(type){
 */
 //			]);
 //	}
+	 //}
 
 
 
-}
 	
 
 function popuplinks(lonlat){

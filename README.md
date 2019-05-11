@@ -10,8 +10,11 @@ Accessibilitat és una prova de concepte sobre el mapa personalitzable a OpenStr
 # Renderització de dades
 ## Estil
 ## [Mapa](http://yopaseopor.github.io/accessibilitat/map)
+
 Mapa basat en [Bicycle tags map](https://wiki.openstreetmap.org/wiki/Bicycle_tags_map)
+
 Amb modificacions de [Ramiro Balado](https://github.com/Qjammer)
+
 El mapa ens permet la mostra d'elements determinats personalitzables tenint com a fons varis mapes diferents.
 Per poder-ho fer hem de seguir les instruccions que trobarem en aquests arxius (poden estar en anglès) cercant la cadena "MODIFICAR"
 

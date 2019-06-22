@@ -284,22 +284,29 @@ function layerdef(type){
 		
 			make_layer(
 				QURL + "?data=(node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox););out+skel;",
-				name="#c#&nbspwheelchair=yes<hr>",
-				defaultPoint("green"),
+				name="#c#&nbspwheelchair=yes",
+				defaultPoint("lime"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=(node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox););out+skel;",
-				name="#c#&nbspwheelchair=limited<hr>",
+				name="#c#&nbspwheelchair=limited",
 				defaultPoint("yellow"),
 				false
 			),
 
 			make_layer(
 				QURL + "?data=(node[wheelchair=no][shop](bbox);node[wheelchair=no][amenity](bbox););out+skel;",
-				name="#c#&nbspwheelchair=no<hr>",
+				name="#c#&nbspwheelchair=no",
 				defaultPoint("red"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=(node[wheelchair!=*][shop](bbox);node[wheelchair!=*][amenity](bbox););out+skel;",
+				name="#c#&nbspFalta wheelchair<hr>",
+				defaultPoint("black"),
 				false
 			),
 

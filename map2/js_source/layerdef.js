@@ -1,57 +1,60 @@
 
+// ====================
+// bevat de query strings voor de verschillende lagen
+//
+// formaat make_layer variabelen:
+//
+//<URL> string 'url',<color>: string '#RGB', <name>: string '[imagetype]tekst', <lijnbreedte>[.cirkelradius]: int/float, <zichtbaarheid> : boolean, [lijntpye][transparantie] :string '[aan uit (aan uit ( ...))][@transparantie]'
+//
+// imagetype: #l# = lijn, #dl#=dubbele lijn, #d# = stippellijn, #c#= transparant, #co# = cirkel opaque met cijfers
+// aan/uit = pixellengte van de lijn, zichtbare lijn-open gedeelte
+// transparantie = 0-1 transparantie van de lijn
+//
 //=====================
-/*
-//	function defaultSolidLine(color){   //	function nomfunciólínia
-//		return(
-//		{
-//			strokeColor:color,
-//			strokeOpacity:0.7, // opacitat entre 0 i 1
-//			strokeWidth:2,     //amplada traç
-//			strokeLinecap: "square", //tipus de línia (“butt”, “round”, or “square”).
-//			strokeDashstyle: "6 10" //discontinuitats en la línia . Si no hi ha esborrar línia tenint en compte que la darrera opció no porta coma
-//		});
-//	}
-//==============================
-	function defaultPoint(color){ //function nomfunciópunt 
-		return (
-		{
-			strokeColor:color,
-			strokeOpacity:0.7, // opacitat entre 0 i 1
-			strokeWidth:2,     //amplada traç
-			pointRadius:5,     //radi del punt
-			fillColor:"white", //color en anglès per omplir el cercle
-			fillOpacity:0.75 //opacitat de l'omplenament del cercle entre 0 i 1
-		});
-	}
-======================================
-	function defaulturlpoint(url){   //function iconaexteriorpunt
-		return (
-		{
-			externalGraphic:url, //adreça url de la icona
-			graphicWidth:20,     //mida amplada icona
-			graphicHeight:20,    //mida alçada icona
-			graphicOpacity:0.75, //opacitat icona
-			graphicXOffset: -4, // píxels dreta/esquerra del punt
-			graphicYOffset: 0,  //píxels amunt/avall del punt 
-			rotation:180        //rotació icona
-		});
-	}
-============================
-
-			make_layer(
-				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;", //consulta de dades Overpass
-				name="#ex#&nbspAdaptat=sí",									//nom que es veu de l'opció "#codidetipus#nom",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"), //funció de tipus d'icona definida anteriorment ("url")
-				false //activat per defecte true/false
-			),	
-	
-	CODI DE TIPUS
-#l# = línia, #dl#=línia doble, #d# = discontínua, #c#= transparent, #ex# = imatge exterior
-
-================================================
-	
-*/
-
+// ====================
+//	
+//	COPIAR	if (type == "nameofthe td id"){                         of index.html
+//  COPIAR	map.addLayers([
+//	COPIAR  make_layer(QURL + "?data=(way[key=value](bbox);node(w);way[otherkey=othervalue](bbox);node(w););out+skel;", "#colorinRGB",name="#typeofline#nameyouwillseeattheslector",circleradius/width of the line,default active (boolean value),"start end of the line@transparency"),
+// COPIAR			]);
+// COPIAR			
+// COPIAR		}
+// INSTRUCCIONS #colorinRGB: RGB color for the line/cercle
+// INSTRUCCIONS #typeofline#: #l# = line, #dl#=double line, #d# = uncontinuous line, #c#= transparent, #co# = cercle opaque
+// INSTRUCCIONS start/end of the line pixels in which start the line
+// INSTRUCCIONS default active option true enabled false unabled
+// INSTRUCCIONS transparency = @0-1 transparency of the line
+//
+//=====================
+// ====================
+//	
+//	COPIAR	if (type == "nombredelaidtd"){                         nombre de la id de la td  de index.html
+//  COPIAR	map.addLayers([
+//	COPIAR  make_layer(QURL + "?data=(nodovíaorelación[clave=valor](bbox);node(w);otronodovíaorelación[otraclave=otrovalor](bbox);node(w););out+skel;", "#colorenRGB",name="#tipodelínea#elnombrequedeseesparaelselector",radiodelcírculo/anchuradelínea,selectoractivooinactivopordefecto (valor booleano),"inicio final de la línea@transparencia"),
+// COPIAR			]);
+// COPIAR			
+// COPIAR		}
+// INSTRUCCIONS #colorenRGB: código RGB del color para la línea/círculo
+// INSTRUCCIONS #tipodelínea#: #l# = línea, #dl#=línea doble, #d# = discontinua, #c#= transparente, #co# = círculo opaco
+// INSTRUCCIONS inicio/fin de la discontinuidad de la línea
+// INSTRUCCIONS selector activado por defecto: true activado false desactivado
+// INSTRUCCIONS transparencia = @0-1 transparencia de la línea
+//
+//=====================
+// ====================
+//	
+//	COPIAR	if (type == "nombredelaidtd"){                         nom de la id de la td  d'index.html
+//  COPIAR	map.addLayers([
+//	COPIAR  make_layer(QURL + "?data=(nodeviaorelació[clau=valor](bbox);node(w);altreviaonodeorelació[altraclau=altrevalor](bbox);node(w););out+skel;", "#colorenRGB",name="#tipusdelínia#elnomquedesitgispelselector",radidelcercle/ampladadelínia,selectoractiuperdefecte (valor booleà),"inici final de la línia@transpareècia"),
+// COPIAR			]);
+// COPIAR			
+// COPIAR		}
+// INSTRUCCIONS #colorenRGB: codi RGB del color per a la línia/cercle
+// INSTRUCCIONS #tipusdelínia#: #l# = línia, #dl#=línia doble, #d# = discontínua, #c#= transparent, #co# = cercle opac
+// INSTRUCCIONS inici/fi de la discontinuitat de la línia
+// INSTRUCCIONS selector activat per defecte: true activat false desactivat
+// INSTRUCCIONS transparència = @0-1 transparència de la línia
+//
 //=====================
 function layerdef(type){
 
@@ -275,84 +278,7 @@ function layerdef(type){
 		});
 	}
 	
-	if (type == "botigues"){ //MODIFICAR 
-		
-		map.addLayers([
-
-			make_layer(
-				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
-				name="#ex#&nbspAdaptat=sí",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
-				name="#ex#&nbspAdaptat=no",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
-				name="#ex#&nbspPlaça aparcament",
-			defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/capacity_disabled.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
-				name="#ex#&nbspMobilitat limitada",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#ex#&nbspObstacle per a la mobilitat",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
-				name="#ex#&nbspPas de vianant amb semàfor",
-				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[crossing=no](bbox);out+skel;",
-				name="#ex#&nbspProhibit passar",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
-				name="#ex#&nbspPas de vianants",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
-				false
-),
-		make_layer(
-				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
-				name="#ex#&nbspPassos no senyalitzats",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
-				false
-			),
-					//highway=cycleway
-			make_layer(
-				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
-				name="#l#Voreres amb problemes",
-				defaultSolidLine("red"),
-				false,
-			),
-			 
-			]);
-	}
-}
-	
-	if (type == "carrers"){
+	if (type == "test"){
 		
 		map.addLayers([
 /*			
@@ -563,7 +489,7 @@ true
 */			 
 			]);
 	}			
-		if (type == "transports"){
+		if (type == "route"){
 
 			map.addLayers([
 			
@@ -661,7 +587,7 @@ true
 	
 	}	
 
-	if (type == "interior"){
+	if (type == "bugs"){
 		//	dit maakt de layers voor de bugslaag
 			map.addLayers([
 			

@@ -283,28 +283,28 @@ function layerdef(type){
 		map.addLayers([
 		
 			make_layer(
-				QURL + "?data=(node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox););out+skel;",
+				QURL + "?data=(node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox);node[wheelchair=yes][office](bbox););out+skel;",
 				name="#c#&nbspwheelchair=yes",
 				defaultPoint("lime"),
 				false
 			),
 
 			make_layer(
-				QURL + "?data=(node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox););out+skel;",
+				QURL + "?data=(node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox);node[wheelchair=limited][office](bbox););out+skel;",
 				name="#c#&nbspwheelchair=limited",
 				defaultPoint("yellow"),
 				false
 			),
 
 			make_layer(
-				QURL + "?data=(node[wheelchair=no][shop](bbox);node[wheelchair=no][amenity](bbox););out+skel;",
+				QURL + "?data=(node[wheelchair=no][shop](bbox);node[wheelchair=no][amenity](bbox);node[wheelchair=no][office](bbox););out+skel;",
 				name="#c#&nbspwheelchair=no<hr>",
 				defaultPoint("red"),
 				false
 			),
 
 			make_layer(
-				QURL + "?data=(node[!wheelchair][shop](bbox);node[!wheelchair][amenity](bbox););out+skel;",
+				QURL + "?data=(node[!wheelchair][shop](bbox);node[!wheelchair][amenity](bbox);node[!wheelchair][office](bbox););out+skel;",
 				name="#c#&nbspFalta wheelchair",
 				defaultPoint("black"),
 				false

@@ -350,28 +350,28 @@ function layerdef(type){
 			make_layer(
 				QURL + "?data=(way[wheelchair=yes][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
 				name="#l#wheelchair=yes (àrea)",
-				defaultSolidLine("lime"),
+				defaultDashedLine("lime"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[wheelchair=limited][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
 				name="#l#wheelchair=limited (àrea)",
-				defaultSolidLine("yellow"),
+				defaultDashedLine("yellow"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[wheelchair=no][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
 				name="#l#wheelchair=no (àrea)<hr>",
-				defaultSolidLine("red"),
+				defaultDashedLine("red"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
 				name="#l#Falta wheelchair (àrea)",
-				defaultSolidLine("black"),
+				defaultDashedLine("black"),
 				false,
 			),
 			 

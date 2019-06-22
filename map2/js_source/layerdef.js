@@ -304,7 +304,7 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=(node[!"wheelchair"][shop](bbox);node[!"wheelchair"][amenity](bbox););out+skel;",
+				QURL + "?data=(node[!wheelchair][shop](bbox);node[!wheelchair][amenity](bbox););out+skel;",
 				name="#c#&nbspFalta wheelchair",
 				defaultPoint("black"),
 				false

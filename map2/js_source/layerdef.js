@@ -349,28 +349,28 @@ function layerdef(type){
 								//highway=cycleway
 			make_layer(
 				QURL + "?data=(way[wheelchair=yes][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
-				name="#l#wheelchair=yes (àrea)",
+				name="#d#wheelchair=yes (àrea)",
 				defaultDashedLine("lime"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[wheelchair=limited][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
-				name="#l#wheelchair=limited (àrea)",
+				name="#d#wheelchair=limited (àrea)",
 				defaultDashedLine("yellow"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[wheelchair=no][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
-				name="#l#wheelchair=no (àrea)<hr>",
+				name="#d#wheelchair=no (àrea)<hr>",
 				defaultDashedLine("red"),
 				false,
 			),
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
-				name="#l#Falta wheelchair (àrea)",
+				name="#d#Falta wheelchair (àrea)",
 				defaultDashedLine("black"),
 				false,
 			),

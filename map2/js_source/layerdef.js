@@ -283,6 +283,13 @@ function layerdef(type){
 		map.addLayers([
 		
 			make_layer(
+				QURL + "?data=(node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox););out+skel;",
+				name="#c#&nbspwheelchair=yes<hr>",
+				defaultPoint("green"),
+				false
+			),
+
+			make_layer(
 				QURL + "?data=(node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox););out+skel;",
 				name="#c#&nbspwheelchair=limited<hr>",
 				defaultPoint("yellow"),
@@ -290,9 +297,9 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
-				name="#ex#&nbspAdaptat=sí",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
+				QURL + "?data=(node[wheelchair=no][shop](bbox);node[wheelchair=no][amenity](bbox););out+skel;",
+				name="#c#&nbspwheelchair=no<hr>",
+				defaultPoint("red"),
 				false
 			),
 

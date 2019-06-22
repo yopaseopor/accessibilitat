@@ -353,7 +353,7 @@ function layerdef(type){
 			 
 			]);
 	}
-}
+
 	
 	if (type == "test"){
 		

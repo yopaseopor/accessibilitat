@@ -298,14 +298,14 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(node[wheelchair=no][shop](bbox);node[wheelchair=no][amenity](bbox););out+skel;",
-				name="#c#&nbspwheelchair=no",
+				name="#c#&nbspwheelchair=no<hr>",
 				defaultPoint("red"),
 				false
 			),
 
 			make_layer(
-				QURL + "?data=(node[wheelchair!][shop](bbox);node[wheelchair!][amenity](bbox););out+skel;",
-				name="#c#&nbspFalta wheelchair<hr>",
+				QURL + "?data=(node["wheelchair"!~".*"][shop](bbox);node["wheelchair"!~".*"][amenity](bbox););out+skel;",
+				name="#c#&nbspFalta wheelchair",
 				defaultPoint("black"),
 				false
 			),

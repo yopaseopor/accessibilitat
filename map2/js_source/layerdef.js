@@ -353,6 +353,234 @@ function layerdef(type){
 			 
 			]);
 	}
+	
+			if (type == "vies"){ //MODIFICAR 
+		
+		map.addLayers([
+
+			make_layer(
+				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=sí",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=no",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
+				name="#ex#&nbspPlaça aparcament",
+			defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/capacity_disabled.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
+				name="#ex#&nbspMobilitat limitada",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
+				name="#ex#&nbspObstacle per a la mobilitat",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
+				name="#ex#&nbspPas de vianant amb semàfor",
+				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=no](bbox);out+skel;",
+				name="#ex#&nbspProhibit passar",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
+				name="#ex#&nbspPas de vianants",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
+				false
+),
+		make_layer(
+				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
+				name="#ex#&nbspPassos no senyalitzats",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
+				false
+			),
+					//highway=cycleway
+			make_layer(
+				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
+				name="#l#Voreres amb problemes",
+				defaultSolidLine("red"),
+				false,
+			),
+			 
+			]);
+	}
+	
+			if (type == "transports"){ //MODIFICAR 
+		
+		map.addLayers([
+
+			make_layer(
+				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=sí",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=no",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
+				name="#ex#&nbspPlaça aparcament",
+			defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/capacity_disabled.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
+				name="#ex#&nbspMobilitat limitada",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
+				name="#ex#&nbspObstacle per a la mobilitat",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
+				name="#ex#&nbspPas de vianant amb semàfor",
+				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=no](bbox);out+skel;",
+				name="#ex#&nbspProhibit passar",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
+				name="#ex#&nbspPas de vianants",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
+				false
+),
+		make_layer(
+				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
+				name="#ex#&nbspPassos no senyalitzats",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
+				false
+			),
+					//highway=cycleway
+			make_layer(
+				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
+				name="#l#Voreres amb problemes",
+				defaultSolidLine("red"),
+				false,
+			),
+			 
+			]);
+	}
+	
+			if (type == "interior"){ //MODIFICAR 
+		
+		map.addLayers([
+
+			make_layer(
+				QURL + "?data=node[wheelchair=yes][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=sí",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_yes_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=no][shop](bbox);out+skel;",
+				name="#ex#&nbspAdaptat=no",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_no_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['capacity:disabled'='1'](bbox);out+skel;",
+				name="#ex#&nbspPlaça aparcament",
+			defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/capacity_disabled.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[wheelchair=limited][shop](bbox);out+skel;",
+				name="#ex#&nbspMobilitat limitada",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/wheelchair_limited_shop.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
+				name="#ex#&nbspObstacle per a la mobilitat",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
+				name="#ex#&nbspPas de vianant amb semàfor",
+				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=no](bbox);out+skel;",
+				name="#ex#&nbspProhibit passar",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
+				false
+			),
+
+			make_layer(
+				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
+				name="#ex#&nbspPas de vianants",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
+				false
+),
+		make_layer(
+				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
+				name="#ex#&nbspPassos no senyalitzats",
+				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
+				false
+			),
+					//highway=cycleway
+			make_layer(
+				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
+				name="#l#Voreres amb problemes",
+				defaultSolidLine("red"),
+				false,
+			),
+			 
+			]);
+	}
 
 	
 	if (type == "test"){

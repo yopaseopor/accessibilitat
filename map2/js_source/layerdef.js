@@ -341,49 +341,37 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway=footway](bbox);node(w););out+skel;",
-				name="#l#Falta wheelchair",
+				name="#l#Falta wheelchair<hr><hr>",
 				defaultSolidLine("black"),
 				false,
 			),
 
+								//highway=cycleway
 			make_layer(
-				QURL + "?data=node['obstacle:wheelchair'=yes](bbox);out+skel;",
-				name="#ex#&nbspObstacle per a la mobilitat",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/obstacle_wheelchair_yes.png"),
-				false
+				QURL + "?data=(way[wheelchair=yes][highway=footway][area=yes](bbox);node(w););out+skel;",
+				name="#l#wheelchair=yes (àrea)",
+				defaultSolidLine("lime"),
+				false,
 			),
 
 			make_layer(
-				QURL + "?data=node[crossing=traffic_signals](bbox);out+skel;",
-				name="#ex#&nbspPas de vianant amb semàfor",
-				defaultExtPoint("https://raw.githubusercontent.com/yopaseopor/accessibilitat/master/icons/crossing_traffic_signals.png"),
-				false
+				QURL + "?data=(way[wheelchair=limited][highway=footway][area=yes](bbox);node(w););out+skel;",
+				name="#l#wheelchair=limited (àrea)",
+				defaultSolidLine("yellow"),
+				false,
 			),
 
 			make_layer(
-				QURL + "?data=node[crossing=no](bbox);out+skel;",
-				name="#ex#&nbspProhibit passar",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_no.png"),
-				false
-			),
-
-			make_layer(
-				QURL + "?data=node[crossing=uncontrolled](bbox);out+skel;",
-				name="#ex#&nbspPas de vianants",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_uncontrolled.png"),
-				false
-),
-		make_layer(
-				QURL + "?data=node[crossing=unmarked](bbox);out+skel;",
-				name="#ex#&nbspPassos no senyalitzats",
-				defaultExtPoint("https://github.com/yopaseopor/accessibilitat/raw/master/icons/crossing_unmarked.png"),
-				false
-			),
-					//highway=cycleway
-			make_layer(
-				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);node(w););out+skel;",
-				name="#l#Voreres amb problemes",
+				QURL + "?data=(way[wheelchair=no][highway=footway][area=yes](bbox);node(w););out+skel;",
+				name="#l#wheelchair=no (àrea)<hr>",
 				defaultSolidLine("red"),
+				false,
+			),
+
+			make_layer(
+				QURL + "?data=(way[!wheelchair][highway=footway][area=yes](bbox);node(w););out+skel;",
+				name="#l#Falta wheelchair (àrea)",
+				defaultSolidLine("black"),
 				false,
 			),
 			 

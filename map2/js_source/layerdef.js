@@ -283,7 +283,7 @@ function layerdef(type){
 		map.addLayers([
 		
 			make_layer(
-				QURL + "?data=node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox);out+skel;",
+				QURL + "?data=(node[wheelchair=limited][shop](bbox);node[wheelchair=limited][amenity](bbox););out+skel;",
 				name="#c#&nbspwheelchair=limited<hr>",
 				defaultPoint("yellow"),
 				false

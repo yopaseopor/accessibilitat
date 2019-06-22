@@ -1,0 +1,199 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" lang="en">
+  <title>Test tags on OSM</title>
+  
+<!-- oorspronkelijke js isi verplaatst naar lokale kopie! 
+   <script src="https://openlayers.org/api/OpenLayers.js" type="text/javascript"></script>
+   <script src="https://openstreetmap.org/openlayers/OpenStreetMap.js" type="text/javascript"></script>  
+-->
+
+  <script src="api/OpenLayers.js" type="text/javascript"></script>
+  <script src="api/OpenStreetMap.js" type="text/javascript"></script> 
+  <script src="https://maps.google.com/maps/api/js?v=3.2&amp;sensor=false" type="text/javascript"></script>
+  <script src="js_source/noordpass.js" type="text/javascript"></script>
+  <script src="js_source/layerdef.js" type="text/javascript"></script>
+  <script src="js_source/browser.js" type="text/javascript"></script>
+<!-- laden van gpx, idee van Allroads, in ontwikkeling, maar kan alvast geladen -->
+  <script src="js_source/localtracks.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="api/theme/default/style.css" type="text/css"> <!-- basis OL stylesheet == default theme -->
+  <link rel="stylesheet" href="css/mystyle.css" type="text/css"> <!-- je eigen stylesheet, zie theme:null bij map-->
+
+<script type="text/javascript">
+
+var usegpx = true; //hiermee zet je de gpx-knop aan of uit ( false==uit )
+BrowserDetect.init();
+var browser = "";
+//oplossing voor browserverschillen
+ if (BrowserDetect.browser == "MSIE" && BrowserDetect.version == "10"){
+  browser = "ie10";
+ }
+  if (BrowserDetect.browser == "MSIE" && BrowserDetect.version == "9"){
+  browser = "ie9";
+ }
+//proxy instelling voor ie9/8
+		var proxy = false;
+		
+		if (BrowserDetect.browser == "MSIE" && BrowserDetect.version < "10"){
+		proxy = true;
+		}
+		if (proxy){
+		// zet dit terug naar je eigen proxy
+		var QURL = "https://mijndev.openstreetmap.nl/~ligfietser/fiets/api/interpreter/";
+		}
+		else{
+			var QURL = "https://overpass-api.de/api/interpreter/"; //default
+		}
+// standaard positie/zoom
+// MODIFICAR		
+      var lat = 41.26;
+      var lon = 1.74;
+      var zoom = 8;
+	  
+	var map;
+	var tabtype = {
+	//MODIFICAR
+		name: "test",
+			clearall: function (){ //functie voor toekomstig gebruik
+				for (i = map.layers.length - 1; i > 1; i--) { 
+					if (map.layers[i].isBaseLayer == false) { // only to overlays
+						map.layers[i].setVisibility(false);
+					}
+				}
+			}
+		};
+
+
+	// zoek naar een eventuele map variabele in de GET van de permalink
+	var permalink_true = window.location.search;
+	if (permalink_true.length > 0){
+		q = permalink_true.split("&");
+		q = q[0].split("=");
+		if (q[1].length > 0){
+			tabtype.name = q[1];
+		}
+	}
+//  de openlayers functie
+function init(){
+		var ls = new OpenLayers.Control.LayerSwitcher();
+		plink = new OpenLayers.Control.Permalink({base: "?map=" + tabtype.name});
+		map = new OpenLayers.Map ("map", {
+		controls:[
+			ls,
+			new OpenLayers.Control.Navigation(),
+			new OpenLayers.Control.PanZoomBar(),
+//			new OpenLayers.Control.MousePosition(), // niet bij BTM
+			plink,
+			new OpenLayers.Control.Attribution()],
+			maxExtent: new OpenLayers.Bounds(-20037508.34,-20037508.34,20037508.34,20037508.34),
+			maxResolution: 156543.0399,
+			numZoomLevels: 20,
+			units: 'm',
+			projection: new OpenLayers.Projection("EPSG:900913"),
+			displayProjection: new OpenLayers.Projection("EPSG:4326"),
+			theme: null // zie stylesheets
+		} );
+		ls.maximizeControl(); 
+
+		// ==== de baselayers ==
+		// MODIFICAR Layers & attributions
+		layerMapnik = new OpenLayers.Layer.OSM.Mapnik("Mapnik",{'attribution': '© <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> Contributors<br>Cartography licensed as CC-BY-SA<br>Overlay data licensed under ODbL '});
+		map.addLayer(layerMapnik);
+		
+		var BW = new OpenLayers.Layer.XYZ("Mapnik (B&W)","https://toolserver.org/tiles/bw-mapnik/${z}/${x}/${y}.png",{'attribution': '© <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL '}); 
+		map.addLayer(BW);
+		
+		var OSMFr = new OpenLayers.Layer.OSM("OSMFr", ["https://a.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png", "https://b.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png", "https://c.tile.openstreetmap.fr/osmfr/${z}/${x}/${y}.png"], { displayOutsideMaxExtent: true,numZoomLevels: 20, attribution: '&copy; Openstreetmap France | © <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL  '}); map.addLayer(OSMFr);
+		
+		var OSMCh = new OpenLayers.Layer.XYZ("OSMCh","https://tile.osm.ch/switzerland/${z}/${x}/${y}.png",{'attribution': ' © <a href="https://www.openstreetmap.org/copyright/en" target="_blank">OpenStreetMap</a> contributors<br>Overlay data licensed under ODbL '}); 
+		map.addLayer(OSMCh);
+		
+		var cycle = new OpenLayers.Layer.OSM("OpenCycleMap", ["https://a.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb", "https://b.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb", "https://c.tile.thunderforest.com/cycle/${z}/${x}/${y}.png?apikey=a5dd6a2f1c934394bce6b0fb077203eb"], { displayOutsideMaxExtent: true,numZoomLevels: 19, attribution: 'Open Cyclemap '}); map.addLayer(cycle);
+
+		var arcgis = new OpenLayers.Layer.XYZ("ArcGIS World Topo","https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/${z}/${y}/${x}",{'attribution': 'Cartography © <a href="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer" target="_blank">ArcGIS</a><br>Overlay data OpenStreetMap contributors, licensed under ODbL '}); 
+		map.addLayer(arcgis);
+
+		var positron = new OpenLayers.Layer.XYZ("Positron (CartoDB)","https://s.basemaps.cartocdn.com/light_all/${z}/${x}/${y}.png",{'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'});
+		map.addLayer(positron);
+		
+		var darkmatter = new OpenLayers.Layer.XYZ("Dark Matter (CartoDB)","https://s.basemaps.cartocdn.com/dark_all/${z}/${x}/${y}.png",{'attribution': '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, &copy; <a href="https://cartodb.com/attributions">CartoDB</a>'});
+		map.addLayer(darkmatter);
+		
+		googlesat = new OpenLayers.Layer.XYZ("Google Sat",
+                    ["https://mt0.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
+					"https://mt1.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
+					"https://mt2.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}",
+					"https://mt3.google.com/vt/lyrs=s&x=${x}&y=${y}&z=${z}"
+					],
+                    { numZoomLevels: 19,
+                    attribution: '<a href="https://maps.google.com"><b>Source: Google Maps</b> </a>'});
+					map.addLayer(googlesat);
+		
+		
+		// ====
+
+		// === layers, zoom and position
+		
+		var lonLat = new OpenLayers.LonLat(lon, lat).transform(new OpenLayers.Projection("EPSG:4326"), new OpenLayers.Projection("EPSG:900913"));
+
+		layerdef(tabtype.name); // roept externe layerdefinitie in layerdef.js aan
+		document.getElementById(tabtype.name).className = "choice";
+			
+		if(!map.getCenter()) {
+			map.setCenter(new OpenLayers.LonLat(lon,lat).transform(map.displayProjection,map.projection), zoom);
+		}  
+
+		// deze class wordt in noordpass.js gedefinieerd
+
+ 		var click = new OpenLayers.Control.Click(
+			QURL
+				+ "?data=[out:popup(\"wegen:\";[highway~'.*'];[route=ferry];[rcn_ref~'.*'];[barrier~'.*'];[shop=bicycle];[route~'.*'];\"id\";)];"
+				+ "(node(bbox);way(bbox););(._;<;);out;"
+			+ "&redirect=no&template=ids.popup", 0.000005, map); 
+		
+			map.addControl(click);
+			click.activate();
+
+			if (usegpx){
+
+			map.addControl(new OpenLayers.Control.LocalTracks());
+
+			}
+		}  
+
+
+</script>
+
+</head>
+<body onload="init()">
+<iframe height=0 width=0  name="josm_frame" class="hidden"></iframe>
+  <div id="map" class="smallmap"></div>
+  <div id="titel" class="titel" >
+  
+  <!-- MODIFICAR Home table | tabla de inicio | taula d'inici  IMPORTANT <td id "name" -->
+    <table width="100%" border="0" cellspacing="0" cellpadding="6" height="100%">
+    <tr> 
+      <td colspan="6" class="kaartnaam" align='center'>Test tags on OSM <a href='https://wiki.openstreetmap.org/wiki/Bicycle_tags_map' target='_blank'><img src='img/help.gif'></a></td>
+    </tr>
+    <tr> 
+      <td id="botigues" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">Botigues/Tiendas</td>
+      <td id="carrers" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">Carrers/Calles</td>
+      <td id="transports" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">Transports/Transportes</td>
+	  <td id="interior" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">Indoor/Interior</td>
+      <td id="clearall" class="action" style="border-right:1px solid #000000;" onclick="tabtype.clearall();">Reboot/Reiniciar</td>	  
+<!-- tab voor gps positie, is leuk kan ook weg natuurlijk -->
+	  <td id="getpos" class="dorment" onclick="getPos();"><img src="img/gps.png"></td>
+    </tr>
+  </table>
+  </div>
+  <div id="statusline" class="statusline"></div>
+<div id="statcounter_image" style="display:inline;"><a
+title="free hit counters" href="https://statcounter.com/"
+class="statcounter"><img
+src="https://c.statcounter.com/8529744/0/523b74ed/0/"
+alt="free hit counters" style="border:none;" /></a></div>
+  </body>
+</html>
+
+

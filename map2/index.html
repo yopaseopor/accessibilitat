@@ -174,9 +174,10 @@ function init(){
   <!-- MODIFICAR Home table | tabla de inicio | taula d'inici  IMPORTANT <td id "name" -->
     <table width="100%" border="0" cellspacing="0" cellpadding="7" height="100%">
     <tr> 
-      <td colspan="6" class="kaartnaam" align='center'>Test tags on OSM <a href='https://wiki.openstreetmap.org/wiki/Bicycle_tags_map' target='_blank'><img src='img/help.gif'></a></td>
+      <td colspan="6" class="kaartnaam" align='center'>Accesibilitat a OSM <a href='https://wiki.openstreetmap.org/wiki/Wheelchair_routing' target='_blank'><img src='img/help.gif'></a></td>
     </tr>
-    <tr> 
+    <tr>
+		  <td id="basic" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">bàsic</td>
 	  <td id="botigues" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">botigues</td>
 	   <td id="vies" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">vies</td>
 	   <td id="transports" class="dorment" style="border-right:1px solid #000000;" onclick="switchtab(this.id,tabtype.name);">transports</td>

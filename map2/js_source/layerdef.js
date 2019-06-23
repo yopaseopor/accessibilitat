@@ -319,14 +319,14 @@ function layerdef(type){
 
 					//highway=cycleway
 			make_layer(
-				QURL + "?data=(way[wheelchair=yes][highway](bbox););out+skel;",
-				name="#l#wheelchair=yes",
+				QURL + "?data=(way[wheelchair=yes][highway](bbox);node(w););out+skel;",
+				name="<hr>#l#wheelchair=yes",
 				defaultSolidLine("lime"),
 				false,
 			),
 
 			make_layer(
-				QURL + "?data=(way[wheelchair=limited][highway](bbox););out+skel;",
+				QURL + "?data=(way[wheelchair=limited][highway](bbox);node(w););out+skel;",
 				name="#l#wheelchair=limited",
 				defaultSolidLine("yellow"),
 				false,

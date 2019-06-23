@@ -10,17 +10,12 @@
 	}
 	div.olControlLocalTracks {
 		left: 15px;
-		bottom: 80px;
+		bottom: 60px;
 	}
 		div.olControlLayerSwitcher .layersDiv {
 		background-color:  #888888 ;
 		padding-left: 0px;
-		padding-right: 0px;
 		font-size: 11px;
-		overflow-y: auto;
-		overflow-x: auto;
-		height: 500px;
-		width: 250px;
 		}
 	div.olControlAttribution {
 		position: absolute;
@@ -57,7 +52,7 @@
 		background-color:rgba(255,255,255,1);
 		top: 20px;
 		left: 80px;
-		width: 600px;
+		width: 350px;
 		border-style: solid;
 		border-width: 2px;
 		border-color: black;

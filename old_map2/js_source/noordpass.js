@@ -37,7 +37,7 @@
 			map.addPopup(popup,true);
 			var rel_tolerance = this.tolerance * map.getScale();
 			if (rel_tolerance > 0.00008)rel_tolerance = 0.00008;
-
+//MODIFICAR
 			if (map.getZoom() > 13) {
 				var oRequest =  new XMLHttpRequest();
 				var oURL = this.genericUrl + "&bbox=" + (lonlat.lon - rel_tolerance) + "," + (lonlat.lat - rel_tolerance) + "," + (lonlat.lon + rel_tolerance) + "," + (lonlat.lat + rel_tolerance);
@@ -57,7 +57,7 @@
 					t = text.search("</h2>") + 5;
 					if (t<5){ // geen wegen gevonden
 					//MODIFICAR
-					text = "<br><font color=\"red\"> <b>No se encuentran vías</b><br>";
+					text = "<br><font color=\"red\"> <b>No es troben vies</b><br>";
 					}
 					else{
 					text = text.slice(t, t_end);
@@ -65,12 +65,12 @@
 					// zoek naar nummers met meer dan 5 cijfers ( de ref's )
 					// functie die weg id's vervangt door een link naar osm
 					function addlink(match) {
-						s = "<a href=\"http://www.openstreetmap.org/browse/" + match.match(/node|way|relation/i) + "\/" + match.match(/[0-9]{4,}/) + "\" target=\"_blank\">" + match + "</a>";
+						s = "<a href=\"http://www.openstreetmap.org/browse/" + match.match(/node|way|relation/i) + "\/" + match.match(/[0-9]{2,}/) + "\" target=\"_blank\">" + match + "</a>";
 						return s.toLowerCase();
 					}
 					var zoek = /Way [0-9]{5,}/g;
 					text = text.replace(zoek, addlink);
-					var zoek = /Node [0-9]{8,}/g;
+					var zoek = /Node [0-9]{5,}/g;
 					text = text.replace(zoek, addlink);
 					var zoek = /Relation [0-9]{4,}/g;
 					text = text.replace(zoek, addlink);
@@ -81,12 +81,13 @@
 					map.addPopup(popup);
 				}
 				else {
-					alert("Error executing XMLHttpRequest call!");
+					//MODIFICAR Error 
+					alert("Error executant petició XMLHttpRequest");
 				}
 			}
 			else {
-				//MODIFICAR
-				link = link + "<span STYLE=\"font-size: 8pt; color: red;\">" + "(Zoom in for tag info)" + "</span>";
+				//MODIFICAR Zoom in for tag info (+Zoom=+Info)
+				link = link + "<span STYLE=\"font-size: 8pt; color: red;\">" + "(+Zoom = +Info)" + "</span>";
 				map.removePopup(popup);
 				popup.contentHTML = link;
 				map.addPopup(popup);
@@ -132,7 +133,7 @@
 		if (this.layer && this.layer.map && this.layer.map.getZoom() < this.zoom_data_limit) {
 			if (this.layer.visibility == true) {
 				//MODIFICAR
-				setStatusText(" Ácercate más para ver los datos. ");
+				setStatusText(" Apropa't més per veure les dades. ");
 				zoom_valid = false;
 				this.bounds = null;
 			}
@@ -203,6 +204,7 @@
 			}
 		}
 	}
+	//MODIFICAR 	
 	function make_a_large_layer(data_url, color, name, zoom, size, visible, dash, opacity, radius, radopacity) {
 	var localstyle =  new OpenLayers.Style( {
 		strokeColor : color,
@@ -387,6 +389,6 @@ plink.updateLink();
 			
 	function noPos(ercode) {
 		//MODIFICAR
-		alert("No se ha podido determinar tu posición");
+		alert("No s'ha pogut determinar la teva posició");
 		//map.setCenter(new window.OpenLayers.LonLat(lon,lat).transform(map.displayProjection,map.projection), zoom);
 		};

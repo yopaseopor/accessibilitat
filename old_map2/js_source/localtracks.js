@@ -16,12 +16,12 @@ OpenLayers.Control.LocalTracks=OpenLayers.Class(OpenLayers.Control,{
 
 	displayClass: 'olControlLocalTracks',
 
+//MODIFICAR 
 	fileSizeLimit: (1<<20),	// 1Mb
-//MODIFICAR Interficie
-	textButtonLabel: 'Cargar GPX',
-	textButtonTitle: 'Cargar archivo GPX',
-	textFileSizeWarning: 'The file "${name}" is ${size} Bytes big' +
-		String.fromCharCode(223) + '.\nLaden fortsetzen?',
+	textButtonLabel: 'Carregar GPX',
+	textButtonTitle: 'Carregar arxiu GPX',
+	textFileSizeWarning: 'L`arxiu "${name}" és ${size} bytes massa gran' +
+		String.fromCharCode(223) + '.\nContinuar carregant',
 
 	trackLayerGroup: 'local',
 

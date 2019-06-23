@@ -333,7 +333,7 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);way[highway=steps](bbox););out+skel;",
+				QURL + "?data=(way['wheelchair'='no']['highway'='footway'](bbox);way['highway'='steps'](bbox););out+skel;",
 				name="#l#wheelchair=no<hr>",
 				defaultSolidLine("red"),
 				false,

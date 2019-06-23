@@ -433,7 +433,7 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway=pedestrian][area=yes](bbox);node(w););out+skel;",
-				name="#d#Falta wheelchair (àrea)<hr>ALTRES/OTROS/OTHERS<hr><hr>",
+				name="#d#Falta wheelchair (àrea)<hr><hr>ALTRES/OTROS/OTHERS<hr>",
 				defaultDashedLine("black"),
 				false,
 			),

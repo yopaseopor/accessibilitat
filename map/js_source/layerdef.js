@@ -100,7 +100,7 @@ function layerdef(type){
 			});
 	}
 	
-	if (type == "test"){ //MODIFICAR 
+	if (type == "bàsic"){ //MODIFICAR 
 		
 		map.addLayers([
 

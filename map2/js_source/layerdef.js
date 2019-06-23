@@ -319,28 +319,28 @@ function layerdef(type){
 
 					//highway=cycleway
 			make_layer(
-				QURL + "?data=(way[wheelchair=yes][highway=footway](bbox);way[wheelchair=yes][highway=pedestrian](bbox);node(w););out+skel;",
+				QURL + "?data=(way[wheelchair=yes][highway=footway](bbox);node(w););out+skel;",
 				name="#l#wheelchair=yes",
 				defaultSolidLine("lime"),
 				false,
 			),
 
 			make_layer(
-				QURL + "?data=(way[wheelchair=limited][highway=footway](bbox);way[wheelchair=limited][highway=pedestrian](bbox);node(w););out+skel;",
+				QURL + "?data=(way[wheelchair=limited][highway=footway](bbox);node(w););out+skel;",
 				name="#l#wheelchair=limited",
 				defaultSolidLine("yellow"),
 				false,
 			),
 
 			make_layer(
-				QURL + "?data=(way['wheelchair'='no']['highway'='footway'](bbox);way['wheelchair'='no']['highway'='pedestrian'](bbox);way['wheelchair'='no']['highway'='steps'](bbox);node(w););out+skel;",
+				QURL + "?data=(way[wheelchair=no][highway=footway];(bbox);way[highway=steps];node(w););out+skel;",
 				name="#l#wheelchair=no<hr>",
 				defaultSolidLine("red"),
 				false,
 			),
 
 			make_layer(
-				QURL + "?data=(way[!wheelchair]['highway'='footway'](bbox);way[!wheelchair]['highway'='pedestrian'](bbox);node(w););out+skel;",
+				QURL + "?data=(way[!wheelchair][highway=footway](bbox);node(w););out+skel;",
 				name="#l#Falta wheelchair<hr><hr>",
 				defaultSolidLine("black"),
 				false,

@@ -333,14 +333,14 @@ function layerdef(type){
 			),
 
 			make_layer(
-				QURL + "?data=(way[wheelchair=no][highway=footway](bbox);way[wheelchair=no][highway=pedestrian](bbox);way[wheelchair=no][highway=steps](bbox);node(w););out+skel;",
+				QURL + "?data=(way['wheelchair'='no']['highway'='footway'](bbox);way['wheelchair'='no']['highway'='pedestrian'](bbox);way['wheelchair'='no']['highway'='steps'](bbox);node(w););out+skel;",
 				name="#l#wheelchair=no<hr>",
 				defaultSolidLine("red"),
 				false,
 			),
 
 			make_layer(
-				QURL + "?data=(way[!wheelchair][highway=footway](bbox);way[!wheelchair][highway=pedestrian](bbox);node(w););out+skel;",
+				QURL + "?data=(way[!wheelchair]['highway'='footway'](bbox);way[!wheelchair]['highway'='pedestrian'](bbox);node(w););out+skel;",
 				name="#l#Falta wheelchair<hr><hr>",
 				defaultSolidLine("black"),
 				false,

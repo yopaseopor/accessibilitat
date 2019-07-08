@@ -376,9 +376,16 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][footway=crossing](bbox);node(w););out+skel;",
-				name="#l#Falta wheelchair missing<hr><hr>TOT/TODO/ALL<hr>",
+				name="#l#Falta wheelchair missing<hr>",
 				defaultSolidLine("black"),
 				false,
+			),
+
+			make_layer(
+				QURL + "?data=(node[!wheelchair][highway=crossing](bbox);node(w););out+skel;",
+				name="#c#&nbspFalta wheelchair missing<hr><hr>TOT/TODO/ALL",
+				defaultPoint("black"),
+				false
 			),
 
 			make_layer(
@@ -404,16 +411,9 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway](bbox);node(w););out+skel;",
-				name="#l#Falta wheelchair missing",
+				name="#l#Falta wheelchair missing <hr><hr>ÀREES/ÁREAS/AREAS",
 				defaultSolidLine("black"),
 				false,
-			),
-
-			make_layer(
-				QURL + "?data=(node[!wheelchair][highway=crossing](bbox);node(w););out+skel;",
-				name="#c#&nbspFalta wheelchair missing <hr><hr>ÀREES/ÁREAS/AREAS",
-				defaultPoint("black"),
-				false
 			),
 
 								//highway=cycleway

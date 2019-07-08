@@ -404,9 +404,16 @@ function layerdef(type){
 
 			make_layer(
 				QURL + "?data=(way[!wheelchair][highway](bbox);node(w););out+skel;",
-				name="#l#Falta wheelchair missing<hr><hr>ÀREES/ÁREAS/AREAS",
+				name="#l#Falta wheelchair missing",
 				defaultSolidLine("black"),
 				false,
+			),
+
+			make_layer(
+				QURL + "?data=(node[!wheelchair][highway=crossing](bbox);node(w););out+skel;",
+				name="#c#&nbspFalta wheelchair missing <hr><hr>ÀREES/ÁREAS/AREAS",
+				defaultPoint("black"),
+				false
 			),
 
 								//highway=cycleway

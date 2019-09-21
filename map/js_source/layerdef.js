@@ -12,50 +12,80 @@
 //
 //=====================
 // ====================
+// COPIAR 	
+// COPIAR Copy this if you want a line
+// COPIAR
+// COPIAR	function nameofthefunction(color){
+// COPIAR		return(
+// COPIAR		{
+// COPIAR			strokeColor:"color",
+// COPIAR			strokeOpacity:0.7,
+// COPIAR			strokeWidth:2,
+// COPIAR			strokeLinecap: "square",
+// COPIAR			strokeDashstyle: "1 0"
+// COPIAR		});
+// COPIAR	}
+// COPIAR
+// COPIAR Copy this if you want a point
+// COPIAR	function nameofthefunction(color){
+// COPIAR		return (
+// COPIAR		{
+// COPIAR			strokeColor:color,
+// COPIAR			strokeOpacity:0.9,
+// COPIAR			strokeWidth:3,
+// COPIAR			pointRadius:5,
+// COPIAR			fillColor:"white",
+// COPIAR			fillOpacity:0.75
+// COPIAR		});
+// COPIAR	}
+// COPIAR Copy this if you want an external icon
+// COPIAR 		function tsforward(url){
+// COPIAR 		return (
+// COPIAR 		{
+// COPIAR 			externalGraphic:url,
+// COPIAR 			graphicOpacity: 0.75,
+// COPIAR 			graphicWidth:20,
+// COPIAR 			graphicHeight:20,
+// COPIAR 			graphicXOffset: 4,
+// COPIAR 			graphicYOffset: 0,
+// COPIAR 			rotation:0
+// COPIAR 		});
+// COPIAR 	}
 //	
-//	COPIAR	if (type == "nameofthe td id"){                         of index.html
-//  COPIAR	map.addLayers([
-//	COPIAR  make_layer(QURL + "?data=(way[key=value](bbox);node(w);way[otherkey=othervalue](bbox);node(w););out+skel;", "#colorinRGB",name="#typeofline#nameyouwillseeattheslector",circleradius/width of the line,default active (boolean value),"start end of the line@transparency"),
+// COPIAR	if (type == "nameofthetdid"){   of index.html
+// COPIAR	map.addLayers([
+// COPIAR  make_layer(QURL + "?data=(way[key=value](bbox);node(w);way[otherkey=othervalue](bbox);node(w););out+skel;",
+// COPIAR  name="#typeoflineoriconinlegend#HTML code you want to show"
+// COPIAR  nameofthefunction("http://urloftheicon" or "color"),
+// COPIAR  false
+// COPIAR	),
+// COPIAR  from "make_layer" to ), you can replicate to generate every overpass query then... (next line)
 // COPIAR			]);
 // COPIAR			
 // COPIAR		}
-// INSTRUCCIONS #colorinRGB: RGB color for the line/cercle
-// INSTRUCCIONS #typeofline#: #l# = line, #dl#=double line, #d# = uncontinuous line, #c#= transparent, #co# = cercle opaque
-// INSTRUCCIONS start/end of the line pixels in which start the line
-// INSTRUCCIONS default active option true enabled false unabled
-// INSTRUCCIONS transparency = @0-1 transparency of the line
+// VOCABULARI nameofthefuncition= name of the function, Each function with custom parameters has to have an unique name.
+// VOCABULARI
+// VOCABULARI strokeColor=color of the line
+// VOCABULARI strokeOpacity=0-1 transparency of the line
+// VOCABULARI strokeWidth=Width of the line
+// VOCABULARI strokeLinecap=Form of the cap of the line
+// VOCABULARI strokeDashstyle=start/end of the line pixels in which start the line, if it is discontinuous
+// VOCABULARI pointRadius=number in píxels for the radius of the point
+// VOCABULARI fillColor=color you want to fill the cercle
+// VOCABULARI fillOpacity=0-1 transparency of the filled cercle
+// VOCABULARI graphicOpacity=0-1 transparency of the icon
+// VOCABULARI graphicWidth=in pixels, width of the icon
+// VOCABULARI graphicHeight=in pixels, height of the icon
+// VOCABULARI graphicXOffset=in pixels, offset in x from the point of the icon
+// VOCABULARI graphicYOffset=in pixels, offset in y from the point of the icon
+// VOCABULARI rotation:in grades, rotation angle of the icon
+// VOCABULARI nameofthe td id you will find in index.html
+// VOCABULARI QURL + "?data=overpass query"
+// VOCABULARI #typeoflineoriconinlegend#: #l# = line, #dl#=discontinuous line, #d# = dashed line, #c#= cercle,#to# = point #ex#=external icon
+// VOCABULARI nameofthefunction("color")
+// VOCABULARI false or true default active option true enabled false unabled
+// VOCABULARI Also you can custom the option to show the legend
 //
-//=====================
-// ====================
-//	
-//	COPIAR	if (type == "nombredelaidtd"){                         nombre de la id de la td  de index.html
-//  COPIAR	map.addLayers([
-//	COPIAR  make_layer(QURL + "?data=(nodovíaorelación[clave=valor](bbox);node(w);otronodovíaorelación[otraclave=otrovalor](bbox);node(w););out+skel;", "#colorenRGB",name="#tipodelínea#elnombrequedeseesparaelselector",radiodelcírculo/anchuradelínea,selectoractivooinactivopordefecto (valor booleano),"inicio final de la línea@transparencia"),
-// COPIAR			]);
-// COPIAR			
-// COPIAR		}
-// INSTRUCCIONS #colorenRGB: código RGB del color para la línea/círculo
-// INSTRUCCIONS #tipodelínea#: #l# = línea, #dl#=línea doble, #d# = discontinua, #c#= transparente, #co# = círculo opaco
-// INSTRUCCIONS inicio/fin de la discontinuidad de la línea
-// INSTRUCCIONS selector activado por defecto: true activado false desactivado
-// INSTRUCCIONS transparencia = @0-1 transparencia de la línea
-//
-//=====================
-// ====================
-//	
-//	COPIAR	if (type == "nombredelaidtd"){                         nom de la id de la td  d'index.html
-//  COPIAR	map.addLayers([
-//	COPIAR  make_layer(QURL + "?data=(nodeviaorelació[clau=valor](bbox);node(w);altreviaonodeorelació[altraclau=altrevalor](bbox);node(w););out+skel;", "#colorenRGB",name="#tipusdelínia#elnomquedesitgispelselector",radidelcercle/ampladadelínia,selectoractiuperdefecte (valor booleà),"inici final de la línia@transpareècia"),
-// COPIAR			]);
-// COPIAR			
-// COPIAR		}
-// INSTRUCCIONS #colorenRGB: codi RGB del color per a la línia/cercle
-// INSTRUCCIONS #tipusdelínia#: #l# = línia, #dl#=línia doble, #d# = discontínua, #c#= transparent, #co# = cercle opac
-// INSTRUCCIONS inici/fi de la discontinuitat de la línia
-// INSTRUCCIONS selector activat per defecte: true activat false desactivat
-// INSTRUCCIONS transparència = @0-1 transparència de la línia
-//
-//=====================
 function layerdef(type){
 
 	/*
@@ -250,7 +280,7 @@ function layerdef(type){
 			externalGraphic:url,
 			graphicWidth:16,
 			graphicHeight:16,
-			rotation:125
+			rotation:0
 		});
 	}
 	

@@ -170,11 +170,12 @@
 	
 	function make_layer(data_url, name, styleParams, visible, dash) {
 	
-	//---- add an image if specified by  placehoder in name, placeholders are #l# > single line, #dl#>line line,#d#>dotted,#ex# for external image
+	//MODIFICAR ---- add an image if specified by  placehoder in name, placeholders are #l# > single line, #dl#>line line,#d#>dotted line,#to# dot in a map, #ex# for external image
 	//	alert(name);
 	name = name.replace("#l#", "<img style='vertical-align: middle;background-color: " + styleParams.strokeColor + ";' src='img/line.gif'>&nbsp");
 	name = name.replace("#dl#", "<img style='vertical-align: middle;background-color: " + styleParams.strokeColor + ";' src='img/lineline.gif'>&nbsp");
 	name = name.replace("#d#", "<img style='vertical-align: middle;background-color: " + styleParams.strokeColor + ";' src='img/dots.gif'>&nbsp");
+	name = name.replace("#to#", "<img style='vertical-align: middle;background-color: " + styleParams.strokeColor + ";' src='img/tocircle.gif'>&nbsp");
 	name = name.replace("#c#", "<img style='vertical-align: middle;background-color: " + styleParams.strokeColor + ";' src='img/tcircle.gif'>&nbsp");
 	name = name.replace("#ex#", "<img style='width:20px;vertical-align: middle; ' src='"+encodeURI(styleParams.externalGraphic)+"'>&nbsp");
 	return make_large_layer(data_url, name, 13, styleParams, visible);

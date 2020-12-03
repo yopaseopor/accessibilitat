@@ -192,7 +192,7 @@ var config = {
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						anchor: [0.5, 0.5],
+						anchor: [10, 10],
           size: [52, 52],
           offset: [52, 0],
           opacity: 1,

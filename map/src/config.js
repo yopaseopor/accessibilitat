@@ -216,27 +216,17 @@ var config = {
 			}
 		},
 		{
-			group: 'Per date',
-			title: 'Exact year',
-			query: '(nwr[~"^name:....$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#0000ff',
+			group: 'Wheelchair',
+			title: 'Wheelchair=no',
+			query: '(node[wheelchair=no][shop]({{bbox}});node[wheelchair=no][amenity]({{bbox}});node[wheelchair=no][office]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.04,
 			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,255,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#0000ff',
-					width: 1.25
-				});
 				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_no_shop.svg'
+					})
 				});
 				return style;
 			}

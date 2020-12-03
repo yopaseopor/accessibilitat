@@ -189,12 +189,12 @@ var config = {
 			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
-			size: [52, 52],
-			scale: [0.1, 0.1],
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
+						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
+						size: [52, 52],
+			            scale: [0.1, 0.1]
 					})
 				});
 				return style;

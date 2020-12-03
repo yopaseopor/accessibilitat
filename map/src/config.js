@@ -647,7 +647,7 @@ var config = {
 			group: 'Altres',
 			title: 'Escales',
 			query: '(way[highway=steps]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/lineline.png',
+			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#FF0000',
 			style: function () {
 				var fill = new ol.style.Fill({

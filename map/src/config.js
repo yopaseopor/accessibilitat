@@ -252,23 +252,17 @@ var config = {
 			group: 'Vies',
 			title: 'Vorera adaptada',
 			query: '(way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}}););out meta;',
-			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
-			iconStyle: 'background-color:#714601',
-			scale: 0.0004,
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#40E0D0',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,255,0.4)'
+					color: 'rgba(64,224,208,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: '#0000ff',
-					width: 1.25
+					color: '#40E0D0',
+					width: 5
 				});
 				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
 					fill: fill,
 					stroke: stroke
 				});

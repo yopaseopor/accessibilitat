@@ -315,6 +315,27 @@ var config = {
 			}
 		},
 		{
+			group: 'Vies',
+			title: 'Vorera sense informació',
+			query: '(way[!wheelchair][highway=footway]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#000000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.2)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Test',
 			title: 'Interval of years - simple',
 			query: '(nwr[~"^name:....-....$"~"."]({{bbox}});node(w););out meta;',

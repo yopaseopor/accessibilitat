@@ -274,13 +274,13 @@ var config = {
 			title: 'Vorera no adaptada',
 			query: '(way[wheelchair=no][highway=footway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
-			iconStyle: 'background-color:#40E0D0',
+			iconStyle: 'background-color:#FF0000',
 			style: function () {
 				var fill = new ol.style.Fill({
-					color: 'rgba(64,224,208,0.4)'
+					color: 'rgba(255,0,0,0.4)'
 				});
 				var stroke = new ol.style.Stroke({
-					color: '#40E0D0',
+					color: '#FF0000',
 					width: 5
 				});
 				var style = new ol.style.Style({

@@ -186,7 +186,7 @@ var config = {
 		{
 			group: 'Wheelchair',
 			title: 'Wheelchair=yes',
-			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out+skel;',
+			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.4,

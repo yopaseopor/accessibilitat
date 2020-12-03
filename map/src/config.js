@@ -192,9 +192,12 @@ var config = {
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
-						scale: 0.4,
-						size: [52, 52]
+						anchor: [0.5, 0.5],
+          size: [52, 52],
+          offset: [52, 0],
+          opacity: 1,
+          scale: 0.25,
+		  src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
 					})
 				});
 				return style;

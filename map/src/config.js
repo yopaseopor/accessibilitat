@@ -397,7 +397,7 @@ var config = {
 				{
 			group: 'Encreuaments',
 			title: 'Wheelchair=yes',
-			query: '(node[wheelchair=yes][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			query: '(node[wheelchair=yes][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
 						scale: 0.25,
@@ -413,7 +413,7 @@ var config = {
 		{
 			group: 'Encreuaments',
 			title: 'Wheelchair=limited',
-			query: '(node[wheelchair=limited][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			query: '(node[wheelchair=limited][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,
@@ -429,7 +429,7 @@ var config = {
 		{
 			group: 'Encreuaments',
 			title: 'Wheelchair=no',
-			query: '(node[wheelchair=no][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			query: '(node[wheelchair=no][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,
@@ -445,7 +445,7 @@ var config = {
 		{
 			group: 'Encreuaments',
 			title: 'Falta Wheelchair',
-			query: '(node[!wheelchair][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			query: '(node[!wheelchair][highway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.25,
@@ -543,6 +543,27 @@ var config = {
 			}
 		},
 		{
+			group: 'Vies',
+			title: 'Escales',
+			query: '(way[highway=steps]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/lineline.png',
+			iconStyle: 'background-color:#FF0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Àrees',
 			title: 'Àrea adaptada',
 			query: '(way[wheelchair=yes][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
@@ -622,6 +643,22 @@ var config = {
 				var style = new ol.style.Style({
 					fill: fill,
 					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Altres',
+			title: 'Plaça aparcament',
+			query: '(node[capacity:disabled]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/capacity_disabled.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/capacity_disabled.svg'
+					})
 				});
 				return style;
 			}

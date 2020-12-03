@@ -252,9 +252,9 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
+			group: 'Voreres',
 			title: 'Vorera adaptada',
-			query: '(way[wheelchair=yes][highway=footway]({{bbox}});node(w););out;',
+			query: '(way[wheelchair=yes][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
 			style: function () {
@@ -273,9 +273,9 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
+			group: 'Voreres',
 			title: 'Vorera amb limitacions',
-			query: '(way[wheelchair=limited][highway=footway]({{bbox}});node(w););out;',
+			query: '(way[wheelchair=limited][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FFA500',
 			style: function () {
@@ -294,9 +294,9 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
+			group: 'Voreres',
 			title: 'Vorera no adaptada',
-			query: '(way[wheelchair=no][highway=footway]({{bbox}});node(w););out;',
+			query: '(way[wheelchair=no][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#FF0000',
 			style: function () {
@@ -315,9 +315,93 @@ var config = {
 			}
 		},
 		{
-			group: 'Vies',
+			group: 'Voreres',
 			title: 'Vorera sense informació',
-			query: '(way[!wheelchair][highway=footway]({{bbox}});node(w););out;',
+			query: '(way[!wheelchair][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#000000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.2)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments ',
+			title: 'Encreuament adaptat',
+			query: '(way[wheelchair=yes][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#40E0D0',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(64,224,208,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#40E0D0',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments ',
+			title: 'Encreuament limitat',
+			query: '(way[wheelchair=limited][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#FFA500',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,165,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FFA500',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments ',
+			title: 'Encreuament no adaptat',
+			query: '(way[wheelchair=no][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#FF0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Voreres',
+			title: 'Vorera sense informació',
+			query: '(way[!wheelchair][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#000000',
 			style: function () {

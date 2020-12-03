@@ -332,7 +332,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments ',
+			group: 'Encreuaments',
 			title: 'Encreuament adaptat',
 			query: '(way[wheelchair=yes][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -353,7 +353,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments ',
+			group: 'Encreuaments',
 			title: 'Encreuament limitat',
 			query: '(way[wheelchair=limited][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -374,7 +374,7 @@ var config = {
 			}
 		},
 		{
-			group: 'Encreuaments ',
+			group: 'Encreuaments',
 			title: 'Encreuament no adaptat',
 			query: '(way[wheelchair=no][highway=footway][footway=crossing]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
@@ -390,6 +390,70 @@ var config = {
 				var style = new ol.style.Style({
 					fill: fill,
 					stroke: stroke
+				});
+				return style;
+			}
+		},
+				{
+			group: 'Encreuaments',
+			title: 'Wheelchair=yes',
+			query: '(node[wheelchair=yes][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
+			iconStyle: 'background-color:#714601',
+						scale: 0.25,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments',
+			title: 'Wheelchair=limited',
+			query: '(node[wheelchair=limited][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments',
+			title: 'Wheelchair=no',
+			query: '(node[wheelchair=no][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_no_shop.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Encreuaments',
+			title: 'Falta Wheelchair',
+			query: '(node[!wheelchair][highway=footway][footway=crossing]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.25,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_unknown.svg'
+					})
 				});
 				return style;
 			}

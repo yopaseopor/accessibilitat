@@ -1,0 +1,27 @@
+{
+  "name": "osmparkingmap",
+  "version": "1.0.0",
+  "description": "OpenStreetMap Parking Map",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Ripollx/osmcatmap2.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ripollx/osmcatmap2/issues"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo \"Error: no required\" && exit 1"
+  },
+  "author": {
+    "name": "Ripollx",
+    "url": "https://github.com/Ripollx"
+  },
+  "keywords": [
+    "Parking",
+    "openlayers",
+    "OpenStreetMap"
+  ]
+}

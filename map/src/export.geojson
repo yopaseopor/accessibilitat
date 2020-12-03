@@ -1,0 +1,2133 @@
+{
+  "type": "FeatureCollection",
+  "generator": "overpass-ide",
+  "copyright": "The data included in this document is from www.openstreetmap.org. The data is made available under ODbL.",
+  "timestamp": "2020-10-03T10:53:03Z",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582209079",
+        "area": "yes",
+        "highway": "pedestrian",
+        "name": "Plaça Catalunya"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              1.7727635,
+              41.2588069
+            ],
+            [
+              1.7727629,
+              41.258783
+            ],
+            [
+              1.7728526,
+              41.2588171
+            ],
+            [
+              1.7731737,
+              41.2588239
+            ],
+            [
+              1.7732203,
+              41.2588401
+            ],
+            [
+              1.7734484,
+              41.2590129
+            ],
+            [
+              1.7735426,
+              41.2590389
+            ],
+            [
+              1.7730114,
+              41.2592831
+            ],
+            [
+              1.7728401,
+              41.2592326
+            ],
+            [
+              1.7727635,
+              41.2588069
+            ]
+          ]
+        ]
+      },
+      "id": "way/582209079"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33777747",
+        "highway": "residential",
+        "lanes": "2",
+        "maxspeed": "50",
+        "name": "Passeig de Circumval·lació",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7753828,
+            41.2552438
+          ],
+          [
+            1.775345,
+            41.2552583
+          ],
+          [
+            1.7753052,
+            41.2552709
+          ],
+          [
+            1.7752436,
+            41.2552979
+          ],
+          [
+            1.7751694,
+            41.2553508
+          ],
+          [
+            1.7750959,
+            41.2554032
+          ],
+          [
+            1.7750214,
+            41.2554389
+          ],
+          [
+            1.7748474,
+            41.255478
+          ],
+          [
+            1.7746915,
+            41.2555095
+          ]
+        ]
+      },
+      "id": "way/33777747"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33777755",
+        "highway": "residential",
+        "name": "Carrer d'Ausiàs March"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7751847,
+            41.2557423
+          ],
+          [
+            1.7750774,
+            41.2556612
+          ],
+          [
+            1.7749318,
+            41.2555522
+          ],
+          [
+            1.7748474,
+            41.255478
+          ]
+        ]
+      },
+      "id": "way/33777755"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/33777756",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Carrer de Pep Ventura"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.773294,
+            41.2558655
+          ],
+          [
+            1.7736384,
+            41.2561134
+          ],
+          [
+            1.7744953,
+            41.2567828
+          ],
+          [
+            1.7757286,
+            41.257704
+          ],
+          [
+            1.7763591,
+            41.2582241
+          ],
+          [
+            1.7764835,
+            41.2583122
+          ],
+          [
+            1.7765606,
+            41.2583802
+          ],
+          [
+            1.7765945,
+            41.2584101
+          ],
+          [
+            1.7768021,
+            41.2585799
+          ],
+          [
+            1.7774197,
+            41.259074
+          ],
+          [
+            1.7779885,
+            41.2595412
+          ]
+        ]
+      },
+      "id": "way/33777756"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099303",
+        "highway": "residential",
+        "name": "Carrer de Josep Llimona",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7769609,
+            41.2578765
+          ],
+          [
+            1.7762246,
+            41.2573355
+          ],
+          [
+            1.7748328,
+            41.2562646
+          ],
+          [
+            1.7740332,
+            41.2556772
+          ]
+        ]
+      },
+      "id": "way/92099303"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099322",
+        "highway": "unclassified",
+        "name": "Passeig de Circumval·lació",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7717279,
+            41.2562481
+          ],
+          [
+            1.7705022,
+            41.2567234
+          ],
+          [
+            1.770004,
+            41.256908
+          ],
+          [
+            1.7692428,
+            41.2572039
+          ],
+          [
+            1.7686633,
+            41.2574196
+          ],
+          [
+            1.7685729,
+            41.2574421
+          ],
+          [
+            1.7675399,
+            41.2577121
+          ],
+          [
+            1.7670064,
+            41.2579309
+          ],
+          [
+            1.7668035,
+            41.258039
+          ],
+          [
+            1.7666147,
+            41.2581655
+          ],
+          [
+            1.7664234,
+            41.2583808
+          ],
+          [
+            1.7661834,
+            41.2586999
+          ]
+        ]
+      },
+      "id": "way/92099322"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099333",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Carrer de Jaume Balmes",
+        "name:ca": "Carrer de Jaume Balmes",
+        "oneway": "no",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7739099,
+            41.2557086
+          ],
+          [
+            1.7736384,
+            41.2561134
+          ],
+          [
+            1.7732741,
+            41.2566302
+          ],
+          [
+            1.7729047,
+            41.2571843
+          ]
+        ]
+      },
+      "id": "way/92099333"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099354",
+        "highway": "residential",
+        "name": "Carrer de Comas i Solà",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.771666,
+            41.2600343
+          ],
+          [
+            1.7725067,
+            41.2587444
+          ]
+        ]
+      },
+      "id": "way/92099354"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099374",
+        "highway": "residential",
+        "name": "Carrer de Guillem I de Ribes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.77255,
+            41.2560551
+          ],
+          [
+            1.7732741,
+            41.2566302
+          ],
+          [
+            1.7741391,
+            41.2572769
+          ],
+          [
+            1.7751922,
+            41.2581083
+          ],
+          [
+            1.7757993,
+            41.2585822
+          ]
+        ]
+      },
+      "id": "way/92099374"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099393",
+        "highway": "residential",
+        "name": "Carrer de la Mare de Déu de Montserrat",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7657039,
+            41.2593084
+          ],
+          [
+            1.7659895,
+            41.2592798
+          ],
+          [
+            1.7666528,
+            41.2589898
+          ],
+          [
+            1.768092,
+            41.2583666
+          ],
+          [
+            1.769643,
+            41.257979
+          ],
+          [
+            1.7704978,
+            41.2577635
+          ],
+          [
+            1.7715255,
+            41.2575338
+          ]
+        ]
+      },
+      "id": "way/92099393"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099414",
+        "highway": "residential",
+        "name": "Carrer de Bernat de Ribes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7704978,
+            41.2577635
+          ],
+          [
+            1.7703537,
+            41.2574572
+          ],
+          [
+            1.770004,
+            41.256908
+          ]
+        ]
+      },
+      "id": "way/92099414"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099452",
+        "highway": "residential",
+        "name": "Carrer dels Albigesos",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7715255,
+            41.2575338
+          ],
+          [
+            1.7705022,
+            41.2567234
+          ]
+        ]
+      },
+      "id": "way/92099452"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099503",
+        "highway": "residential",
+        "name": "Carrer del Bisbe Guilarà",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7735151,
+            41.2589981
+          ],
+          [
+            1.7741019,
+            41.2587503
+          ],
+          [
+            1.7746391,
+            41.2585235
+          ],
+          [
+            1.7751922,
+            41.2581083
+          ],
+          [
+            1.7757286,
+            41.257704
+          ],
+          [
+            1.7762246,
+            41.2573355
+          ],
+          [
+            1.776778,
+            41.2569252
+          ],
+          [
+            1.7772873,
+            41.2565437
+          ]
+        ]
+      },
+      "id": "way/92099503"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92099511",
+        "highway": "residential",
+        "name": "Carrer de Sant Antoni Maria Claret",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7691694,
+            41.2570617
+          ],
+          [
+            1.7692428,
+            41.2572039
+          ],
+          [
+            1.769643,
+            41.257979
+          ],
+          [
+            1.7700085,
+            41.2586867
+          ]
+        ]
+      },
+      "id": "way/92099511"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/92103459",
+        "highway": "residential",
+        "name": "Carrer de Mossèn Anton Miret",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.772803,
+            41.2587512
+          ],
+          [
+            1.7727107,
+            41.2582633
+          ],
+          [
+            1.772598,
+            41.2576673
+          ]
+        ]
+      },
+      "id": "way/92103459"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/142721277",
+        "highway": "tertiary",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7694385,
+            41.2544792
+          ],
+          [
+            1.7698135,
+            41.2547601
+          ],
+          [
+            1.7706218,
+            41.2553952
+          ]
+        ]
+      },
+      "id": "way/142721277"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/142721295",
+        "alt_name": "Carrer del Carç",
+        "highway": "tertiary",
+        "name": "Carrer dels Cards",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7751775,
+            41.2589228
+          ],
+          [
+            1.7746391,
+            41.2585235
+          ],
+          [
+            1.7737425,
+            41.2578459
+          ]
+        ]
+      },
+      "id": "way/142721295"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/169101727",
+        "highway": "cycleway"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.770498,
+            41.2553658
+          ],
+          [
+            1.7691686,
+            41.2543311
+          ],
+          [
+            1.7688057,
+            41.2539525
+          ],
+          [
+            1.7687025,
+            41.2537479
+          ],
+          [
+            1.7685086,
+            41.2536256
+          ]
+        ]
+      },
+      "id": "way/169101727"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/173165635",
+        "highway": "residential",
+        "name": "Carrer de Lluís Companys",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7732256,
+            41.258761
+          ],
+          [
+            1.7732583,
+            41.2587732
+          ],
+          [
+            1.773367,
+            41.2588751
+          ],
+          [
+            1.7734899,
+            41.2589772
+          ]
+        ]
+      },
+      "id": "way/173165635"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/185834241",
+        "highway": "path",
+        "mtb:scale": "2",
+        "surface": "gravel"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7825994,
+            41.2508238
+          ],
+          [
+            1.7826999,
+            41.2509692
+          ],
+          [
+            1.7825711,
+            41.2513926
+          ],
+          [
+            1.7825336,
+            41.2515298
+          ],
+          [
+            1.782451,
+            41.251699
+          ],
+          [
+            1.782462,
+            41.251794
+          ],
+          [
+            1.782389,
+            41.252207
+          ],
+          [
+            1.782333,
+            41.25282
+          ],
+          [
+            1.7823477,
+            41.2530857
+          ],
+          [
+            1.782372,
+            41.253191
+          ],
+          [
+            1.782362,
+            41.253257
+          ],
+          [
+            1.782247,
+            41.253453
+          ],
+          [
+            1.782234,
+            41.25353
+          ],
+          [
+            1.782312,
+            41.25377
+          ],
+          [
+            1.782326,
+            41.253892
+          ],
+          [
+            1.7823,
+            41.253987
+          ],
+          [
+            1.782223,
+            41.254127
+          ],
+          [
+            1.782052,
+            41.254331
+          ],
+          [
+            1.781968,
+            41.254406
+          ],
+          [
+            1.781622,
+            41.254622
+          ],
+          [
+            1.781087,
+            41.254988
+          ],
+          [
+            1.781016,
+            41.25502
+          ],
+          [
+            1.780726,
+            41.255094
+          ],
+          [
+            1.78055,
+            41.255108
+          ],
+          [
+            1.780267,
+            41.255086
+          ],
+          [
+            1.780151,
+            41.25507
+          ],
+          [
+            1.779753,
+            41.254958
+          ],
+          [
+            1.779196,
+            41.254887
+          ],
+          [
+            1.779006,
+            41.254839
+          ],
+          [
+            1.778742,
+            41.254742
+          ],
+          [
+            1.778637,
+            41.254731
+          ],
+          [
+            1.777196,
+            41.254768
+          ],
+          [
+            1.776152,
+            41.254817
+          ],
+          [
+            1.775914,
+            41.254815
+          ],
+          [
+            1.775674,
+            41.254836
+          ],
+          [
+            1.775269,
+            41.254833
+          ],
+          [
+            1.774925,
+            41.25485
+          ],
+          [
+            1.774424,
+            41.254842
+          ],
+          [
+            1.7743838,
+            41.2548364
+          ],
+          [
+            1.773925,
+            41.254772
+          ],
+          [
+            1.77346,
+            41.254769
+          ],
+          [
+            1.772872,
+            41.254819
+          ],
+          [
+            1.772395,
+            41.254818
+          ],
+          [
+            1.771535,
+            41.254894
+          ],
+          [
+            1.771446,
+            41.254918
+          ],
+          [
+            1.771345,
+            41.254977
+          ],
+          [
+            1.771285,
+            41.255044
+          ],
+          [
+            1.771141,
+            41.25527
+          ],
+          [
+            1.770787,
+            41.255711
+          ],
+          [
+            1.770046,
+            41.256326
+          ],
+          [
+            1.769902,
+            41.256405
+          ],
+          [
+            1.769641,
+            41.256512
+          ],
+          [
+            1.769552,
+            41.256534
+          ],
+          [
+            1.769176,
+            41.256565
+          ],
+          [
+            1.76872,
+            41.256654
+          ],
+          [
+            1.767938,
+            41.256753
+          ],
+          [
+            1.767749,
+            41.256769
+          ],
+          [
+            1.766434,
+            41.256771
+          ],
+          [
+            1.766234,
+            41.256788
+          ],
+          [
+            1.766097,
+            41.256815
+          ],
+          [
+            1.765807,
+            41.256918
+          ],
+          [
+            1.765657,
+            41.257005
+          ],
+          [
+            1.765569,
+            41.25709
+          ],
+          [
+            1.765513,
+            41.257179
+          ],
+          [
+            1.765453,
+            41.257332
+          ],
+          [
+            1.765359,
+            41.257888
+          ],
+          [
+            1.765367,
+            41.258342
+          ]
+        ]
+      },
+      "id": "way/185834241"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191690",
+        "highway": "pedestrian",
+        "name": "Plaça Catalunya"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.772803,
+            41.2587512
+          ],
+          [
+            1.772906,
+            41.2592415
+          ]
+        ]
+      },
+      "id": "way/260191690"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191693",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Avinguda de l'Onze de Setembre",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7737425,
+            41.2578459
+          ],
+          [
+            1.7735065,
+            41.2582637
+          ],
+          [
+            1.7732592,
+            41.2587015
+          ],
+          [
+            1.7732387,
+            41.2587377
+          ],
+          [
+            1.7732256,
+            41.258761
+          ]
+        ]
+      },
+      "id": "way/260191693"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191700",
+        "bicycle": "permissive",
+        "description": "Extremely wide footpath, with wide ramps for wheeled access, but no specific indication that it is also a bicycle path.",
+        "highway": "pedestrian",
+        "name": "Passeig de Circumval·lació"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7717279,
+            41.2562481
+          ],
+          [
+            1.7723448,
+            41.2561074
+          ]
+        ]
+      },
+      "id": "way/260191700"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191701",
+        "highway": "residential",
+        "name": "Passeig de Circumval·lació"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7723448,
+            41.2561074
+          ],
+          [
+            1.77255,
+            41.2560551
+          ],
+          [
+            1.773294,
+            41.2558655
+          ],
+          [
+            1.7733886,
+            41.2558414
+          ],
+          [
+            1.7737844,
+            41.2557406
+          ],
+          [
+            1.7739099,
+            41.2557086
+          ],
+          [
+            1.7740332,
+            41.2556772
+          ],
+          [
+            1.7746915,
+            41.2555095
+          ]
+        ]
+      },
+      "id": "way/260191701"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191708",
+        "highway": "residential",
+        "name": "Carrer de Lluís Companys",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7673381,
+            41.2595292
+          ],
+          [
+            1.7686335,
+            41.2589812
+          ],
+          [
+            1.7700085,
+            41.2586867
+          ]
+        ]
+      },
+      "id": "way/260191708"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260191726",
+        "highway": "service",
+        "service": "parking_aisle"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7686037,
+            41.2572713
+          ],
+          [
+            1.7691694,
+            41.2570617
+          ],
+          [
+            1.7698926,
+            41.2567938
+          ],
+          [
+            1.770004,
+            41.256908
+          ]
+        ]
+      },
+      "id": "way/260191726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274623",
+        "highway": "residential",
+        "name": "Carrer de Sant Antoni Maria Claret",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7700085,
+            41.2586867
+          ],
+          [
+            1.7702962,
+            41.2592798
+          ],
+          [
+            1.7703643,
+            41.2594032
+          ],
+          [
+            1.7706672,
+            41.2599219
+          ]
+        ]
+      },
+      "id": "way/260274623"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274624",
+        "highway": "residential",
+        "name": "Carrer de Miguel de Cervantes",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7707476,
+            41.2591312
+          ],
+          [
+            1.7709264,
+            41.2586945
+          ],
+          [
+            1.7715255,
+            41.2575338
+          ]
+        ]
+      },
+      "id": "way/260274624"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274625",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Carrer de Jaume Balmes",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.772598,
+            41.2576673
+          ],
+          [
+            1.7718527,
+            41.2587091
+          ],
+          [
+            1.7711595,
+            41.2597655
+          ]
+        ]
+      },
+      "id": "way/260274625"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274626",
+        "alt_name": "Camí de Can Coll",
+        "highway": "residential",
+        "name": "Carrer de Mossèn Anton Miret",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7723448,
+            41.2561074
+          ],
+          [
+            1.7723294,
+            41.2560185
+          ],
+          [
+            1.7723114,
+            41.2559144
+          ],
+          [
+            1.7722829,
+            41.2557499
+          ],
+          [
+            1.7722035,
+            41.2552919
+          ]
+        ]
+      },
+      "id": "way/260274626"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274627",
+        "highway": "residential",
+        "name": "Carrer de la Mare de Déu de Montserrat",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7737425,
+            41.2578459
+          ],
+          [
+            1.772598,
+            41.2576673
+          ],
+          [
+            1.7715255,
+            41.2575338
+          ]
+        ]
+      },
+      "id": "way/260274627"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260274628",
+        "highway": "residential",
+        "name": "Carrer de Miguel de Cervantes",
+        "oneway": "yes",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7715255,
+            41.2575338
+          ],
+          [
+            1.7720329,
+            41.2564919
+          ]
+        ]
+      },
+      "id": "way/260274628"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260278090",
+        "highway": "tertiary",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7710766,
+            41.2557467
+          ],
+          [
+            1.7710973,
+            41.2557624
+          ],
+          [
+            1.7713159,
+            41.2559323
+          ]
+        ]
+      },
+      "id": "way/260278090"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260281191",
+        "highway": "residential",
+        "name": "Carrer de Mossèn Anton Miret",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.772598,
+            41.2576673
+          ],
+          [
+            1.7724684,
+            41.2568204
+          ]
+        ]
+      },
+      "id": "way/260281191"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260281192",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Carrer de Jaume Balmes",
+        "name:ca": "Carrer de Jaume Balmes",
+        "oneway": "no",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7729047,
+            41.2571843
+          ],
+          [
+            1.7727426,
+            41.2574232
+          ],
+          [
+            1.772598,
+            41.2576673
+          ]
+        ]
+      },
+      "id": "way/260281192"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260281193",
+        "highway": "residential",
+        "name": "Carrer de Lluís Companys",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.772803,
+            41.2587512
+          ],
+          [
+            1.7732256,
+            41.258761
+          ]
+        ]
+      },
+      "id": "way/260281193"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/260281195",
+        "highway": "residential",
+        "name": "Carrer de Mossèn Anton Miret",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7724684,
+            41.2568204
+          ],
+          [
+            1.7723448,
+            41.2561074
+          ]
+        ]
+      },
+      "id": "way/260281195"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278531154",
+        "highway": "residential",
+        "maxspeed": "50",
+        "name": "Avinguda de l'Onze de Setembre"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7737425,
+            41.2578459
+          ],
+          [
+            1.7741391,
+            41.2572769
+          ],
+          [
+            1.7744953,
+            41.2567828
+          ],
+          [
+            1.7748328,
+            41.2562646
+          ],
+          [
+            1.7751847,
+            41.2557423
+          ],
+          [
+            1.7754466,
+            41.2553532
+          ]
+        ]
+      },
+      "id": "way/278531154"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/278531155",
+        "alt_name": "Carrer del Carç",
+        "highway": "tertiary",
+        "name": "Carrer dels Cards",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7724684,
+            41.2568204
+          ],
+          [
+            1.7722543,
+            41.2566565
+          ],
+          [
+            1.7720329,
+            41.2564919
+          ],
+          [
+            1.7717279,
+            41.2562481
+          ],
+          [
+            1.7715708,
+            41.2561228
+          ],
+          [
+            1.7713159,
+            41.2559323
+          ]
+        ]
+      },
+      "id": "way/278531155"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/298276053",
+        "highway": "living_street",
+        "name": "Passatge d'Alí Bei"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7741019,
+            41.2587503
+          ],
+          [
+            1.7745539,
+            41.2590868
+          ]
+        ]
+      },
+      "id": "way/298276053"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/300061726",
+        "highway": "living_street",
+        "name": "Passatge del Consolat de Mar"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7727107,
+            41.2582633
+          ],
+          [
+            1.7730976,
+            41.2581144
+          ],
+          [
+            1.7735065,
+            41.2582637
+          ]
+        ]
+      },
+      "id": "way/300061726"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/388471110",
+        "highway": "track",
+        "mtb:scale": "1"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.769176,
+            41.256565
+          ],
+          [
+            1.77089,
+            41.255515
+          ],
+          [
+            1.7709682,
+            41.2553671
+          ],
+          [
+            1.7708394,
+            41.2552985
+          ],
+          [
+            1.7708877,
+            41.2552501
+          ],
+          [
+            1.770906,
+            41.255177
+          ],
+          [
+            1.770919,
+            41.255064
+          ],
+          [
+            1.770888,
+            41.254999
+          ],
+          [
+            1.770814,
+            41.254947
+          ],
+          [
+            1.77052,
+            41.254876
+          ],
+          [
+            1.770319,
+            41.254876
+          ],
+          [
+            1.7703145,
+            41.2548263
+          ],
+          [
+            1.7702038,
+            41.2547847
+          ],
+          [
+            1.7701581,
+            41.2547368
+          ],
+          [
+            1.770072,
+            41.254701
+          ],
+          [
+            1.76988,
+            41.254119
+          ],
+          [
+            1.769821,
+            41.253993
+          ],
+          [
+            1.769804,
+            41.253933
+          ],
+          [
+            1.769817,
+            41.253869
+          ],
+          [
+            1.769885,
+            41.253815
+          ],
+          [
+            1.770453,
+            41.253677
+          ],
+          [
+            1.770754,
+            41.253571
+          ],
+          [
+            1.771254,
+            41.25324
+          ],
+          [
+            1.7714,
+            41.253179
+          ],
+          [
+            1.771697,
+            41.253085
+          ],
+          [
+            1.7720707,
+            41.2530038
+          ]
+        ]
+      },
+      "id": "way/388471110"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/566818117",
+        "bridge": "yes",
+        "highway": "tertiary",
+        "layer": "1",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7706218,
+            41.2553952
+          ],
+          [
+            1.7710766,
+            41.2557467
+          ]
+        ]
+      },
+      "id": "way/566818117"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/566827559",
+        "alt_name": "Carrer del Carç",
+        "highway": "tertiary",
+        "name": "Carrer dels Cards",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7737425,
+            41.2578459
+          ],
+          [
+            1.7729047,
+            41.2571843
+          ]
+        ]
+      },
+      "id": "way/566827559"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/567149159",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7734899,
+            41.2589772
+          ],
+          [
+            1.7734006,
+            41.2589602
+          ],
+          [
+            1.7733255,
+            41.2588979
+          ],
+          [
+            1.7732011,
+            41.2588147
+          ]
+        ]
+      },
+      "id": "way/567149159"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/567180863",
+        "highway": "tertiary",
+        "name": "Carrer dels Cards",
+        "ref": "BV-2113"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7729047,
+            41.2571843
+          ],
+          [
+            1.7724684,
+            41.2568204
+          ]
+        ]
+      },
+      "id": "way/567180863"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582209076",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7729984,
+            41.2588073
+          ],
+          [
+            1.7729116,
+            41.2588056
+          ],
+          [
+            1.772803,
+            41.2587512
+          ]
+        ]
+      },
+      "id": "way/582209076"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582209078",
+        "highway": "residential",
+        "name": "Carrer de Lluís Companys",
+        "source": "Bing",
+        "surface": "paved"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7700085,
+            41.2586867
+          ],
+          [
+            1.7709264,
+            41.2586945
+          ],
+          [
+            1.7718527,
+            41.2587091
+          ],
+          [
+            1.7725067,
+            41.2587444
+          ],
+          [
+            1.772803,
+            41.2587512
+          ]
+        ]
+      },
+      "id": "way/582209078"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582209080",
+        "highway": "service",
+        "oneway": "no"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7732011,
+            41.2588147
+          ],
+          [
+            1.7732256,
+            41.258761
+          ]
+        ]
+      },
+      "id": "way/582209080"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/582209082",
+        "highway": "service",
+        "oneway": "yes"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7732011,
+            41.2588147
+          ],
+          [
+            1.7731261,
+            41.2588077
+          ],
+          [
+            1.7729984,
+            41.2588073
+          ]
+        ]
+      },
+      "id": "way/582209082"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/687841788",
+        "highway": "track"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7722829,
+            41.2557499
+          ],
+          [
+            1.7728425,
+            41.2555583
+          ],
+          [
+            1.7733131,
+            41.2555134
+          ],
+          [
+            1.7737613,
+            41.2555807
+          ],
+          [
+            1.7742169,
+            41.2552438
+          ],
+          [
+            1.7745381,
+            41.2551147
+          ],
+          [
+            1.7752178,
+            41.2550754
+          ],
+          [
+            1.7754344,
+            41.2550866
+          ]
+        ]
+      },
+      "id": "way/687841788"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/687841789",
+        "highway": "pedestrian",
+        "name": "Passeig de Circumval·lació"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7723294,
+            41.2560185
+          ],
+          [
+            1.7749788,
+            41.2553842
+          ],
+          [
+            1.7753075,
+            41.2551652
+          ],
+          [
+            1.7754344,
+            41.2550866
+          ]
+        ]
+      },
+      "id": "way/687841789"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/687845891",
+        "highway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7715908,
+            41.2562436
+          ],
+          [
+            1.7700137,
+            41.256856
+          ]
+        ]
+      },
+      "id": "way/687845891"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "way/687845892",
+        "highway": "pedestrian"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            1.7699214,
+            41.2568862
+          ],
+          [
+            1.7692513,
+            41.2571486
+          ]
+        ]
+      },
+      "id": "way/687845892"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/2657495546",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Passeig Circumval·lació amb Carrer dels Cards",
+        "public_transport": "stop_position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7713159,
+          41.2559323
+        ]
+      },
+      "id": "node/2657495546"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5457825691",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Carrer dels Cards amb Mossèn Anton Miret",
+        "public_transport": "stop_position"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7722543,
+          41.2566565
+        ]
+      },
+      "id": "node/5457825691"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "@id": "node/5568694768",
+        "bus": "yes",
+        "highway": "bus_stop",
+        "name": "Plaça Catalunya (Sentit Barcelona)",
+        "public_transport": "stop_position",
+        "shelter": "yes"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          1.7729984,
+          41.2588073
+        ]
+      },
+      "id": "node/5568694768"
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+.row::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+[class*="col-"] {
+    position: relative;
+    float: left;
+    padding: 15px;
+    width: 100%;
+}
+
+[class*="w-"] {
+    width: 100%;
+}
+
+html,
+body {
+    font: 62.5% sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body * {
+    font-size: 1.4rem;
+}
+a {
+	color: #00447B;
+}
+a:hover {
+	color: #40F;
+}
+.flex-row{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.map{
+	border: 1px solid;
+	height: 80%;
+	width: 100%;
+}
+
+.menu{
+	height: 20%;
+	width: 100%;
+}
+
+.osmcat-geobutton {
+	bottom: 30px;
+	left: 8px;
+}
+
+.osmcat-infobutton {
+	bottom: 30px;
+	right: 8px;
+}
+
+.osmcat-sharebutton {
+	bottom: 30px;
+	right: 44px;
+}
+
+.osmcat-menu{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+}
+
+.osmcat-select {
+	background: none;
+	border: 0;
+	font-weight: 700;
+	width: 100%;
+}
+
+.osmcat-layer {
+	border: 1px solid #BBB;
+	padding-left: 5px;
+	width: 50%;
+	height: 100%;
+	overflow-y: auto;
+}
+.osmcat-layer > div {
+	width: 100%;
+}
+.osmcat-content {
+	border-top: 1px solid;
+}
+.osmcat-content > div {
+	margin-top: 3px;
+}
+.osmcat-content > div.active {
+	background-color: rgba(0,60,136,.3);
+}
+
+.osmcat-map-pin {
+	min-width: 10px;
+	text-align: center;
+}
+
+.osmcat-loading {
+	bottom: 50%;
+	display: none;
+	right: 50%;
+	z-index: 9999;
+}
+
+.ol-mouse-position {
+	top: 36px;
+}
+
+.ol-rotate {
+	right:5.5em;
+}
+
+.osmcat-rotateleft {
+	top: .5em;
+	right: .5em;
+}
+
+.osmcat-rotateright {
+	top: .5em;
+	right: 3em;
+}
+
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Big screen */
+@media only screen and (min-width:600px) {
+	.flex-row{
+		flex-wrap: nowrap;
+	}
+
+	.map{
+		height: 100%;
+	}
+
+	.menu{
+		height: 100%;
+		width: 300px;
+	}
+	.osmcat-menu{
+		display: block;
+	}
+	.osmcat-layer {
+		height: auto;
+		width: 100%;
+	}
+	.osmcat-content > div:hover {
+		cursor: pointer;
+		background-color: rgba(36,0,136,.3);
+	}
+}

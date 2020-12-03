@@ -251,7 +251,7 @@ var config = {
 		{
 			group: 'Vies',
 			title: 'Vorera adaptada',
-			query: '(way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}}););out meta;',
+			query: '(way[wheelchair=yes][highway=footway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
 			iconStyle: 'background-color:#40E0D0',
 			style: function () {

@@ -126,23 +126,23 @@ var config = {
 			visible: false
 		}),
 		new ol.layer.Tile({
-			title: '2019 ES_IGN - PNOA',
+			title: 'ES_IGN - PNOA - Actual',
 			iconSrc: imgSrc + 'logo_ign.png',
 			source: new ol.source.TileWMS({
 				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
 				url: 'http://www.ign.es/wms-inspire/pnoa-ma?',
-				params: {'LAYERS': 'PNOA2019'}
+				params: {'LAYERS': 'PNOA'}
 			}),
 			visible: false
 		}),
 		
 				new ol.layer.Tile({
-			title: '1945-1946 ES_CAT_ICGC - Vol AMS Sèrie A',
+			title: 'ES_CAT_ICGC - Actual',
 			iconSrc: imgSrc + 'logo_icgc.png',
 			source: new ol.source.TileWMS({
 				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; ICGC &mdash; Source: ICGC',
-				url: 'https://geoserveis.icgc.cat/icc_ortohistorica/wms/service?',
-				params: {'LAYERS': 'ovaa10m', 'VERSION': '1.1.1'}
+				url: 'https://geoserveis.icgc.cat/icc_mapesbase/wms/service?',
+				params: {'LAYERS': 'orto25c', 'VERSION': '1.1.1'}
 			}),
 			visible: false
 		}),

@@ -233,27 +233,17 @@ var config = {
 			}
 		},
 		{
-			group: 'Test',
-			title: 'Exact year',
-			query: '(nwr[~"^name:....$"~"."]({{bbox}});node(w););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			iconStyle: 'background-color:#0000ff',
+			group: 'Wheelchair',
+			title: 'Falta Wheelchair',
+			query: '(node[!wheelchair][shop]({{bbox}});node[!wheelchair][amenity]({{bbox}});node[!wheelchair][office]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
 			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(0,0,255,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#0000ff',
-					width: 1.25
-				});
 				var style = new ol.style.Style({
-					image: new ol.style.Circle({
-						fill: fill,
-						stroke: stroke,
-						radius: 5
-					}),
-					fill: fill,
-					stroke: stroke
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/wheelchair_unknown.svg'
+					})
 				});
 				return style;
 			}

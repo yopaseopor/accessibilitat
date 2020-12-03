@@ -194,7 +194,7 @@ var config = {
 					image: new ol.style.Icon({
 						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 						size: [52, 52],
-			            scale: [0.1, 0.1]
+			            scale: [1, 1]
 					})
 				});
 				return style;

@@ -241,7 +241,7 @@ var config = {
 			query: '(node[!wheelchair][shop]({{bbox}});node[!wheelchair][amenity]({{bbox}});node[!wheelchair][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
 			iconStyle: 'background-color:#714601',
-			scale: 0.0004,
+			scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({

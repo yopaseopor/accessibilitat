@@ -189,15 +189,11 @@ var config = {
 			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
+						scale: 0.25,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						anchor: [10, 10],
-          size: [52, 52],
-          offset: [52, 0],
-          opacity: 1,
-          scale: 0.25,
-		  src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
+						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg'
 					})
 				});
 				return style;

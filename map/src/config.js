@@ -395,10 +395,157 @@ var config = {
 			}
 		},
 		{
-			group: 'Voreres',
-			title: 'Vorera sense informació',
-			query: '(way[!wheelchair][highway=footway][footway=sidewalk]({{bbox}});node(w););out;',
+			group: 'Vies',
+			title: 'Via adaptada',
+			query: '(way[wheelchair=yes][highway]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#40E0D0',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(64,224,208,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#40E0D0',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vies',
+			title: 'Via amb limitacions',
+			query: '(way[wheelchair=limited][highway]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#FFA500',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,165,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FFA500',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vies',
+			title: 'Via no adaptada',
+			query: '(way[wheelchair=no][highway]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#FF0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vies',
+			title: 'Via sense informació',
+			query: '(way[!wheelchair][highway]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#000000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(0,0,0,0.2)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#000000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Àrees',
+			title: 'Àrea adaptada',
+			query: '(way[wheelchair=yes][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/dots.png',
+			iconStyle: 'background-color:#40E0D0',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(64,224,208,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#40E0D0',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Àrees',
+			title: 'Àrea amb limitacions',
+			query: '(way[wheelchair=limited][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/dots.png',
+			iconStyle: 'background-color:#FFA500',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,165,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FFA500',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Àrees',
+			title: 'Àrea no adaptada',
+			query: '(way[wheelchair=no][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/dots.png',
+			iconStyle: 'background-color:#FF0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Àrees',
+			title: 'Àrea sense informació',
+			query: '(way[!wheelchair][highway=pedestrian][area=yes]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/dots.png',
 			iconStyle: 'background-color:#000000',
 			style: function () {
 				var fill = new ol.style.Fill({

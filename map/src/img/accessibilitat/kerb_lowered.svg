@@ -1,6 +1,4 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
@@ -9,12 +7,12 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="512"
-   height="512"
-   viewBox="0 0 135.46666 135.46667"
+   width="32"
+   height="32"
+   viewBox="0 0 8.4666662 8.4666669"
    version="1.1"
    id="svg8"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
    sodipodi:docname="kerb_lowered.svg"
    inkscape:export-filename="C:\a\GitHub\accessibilitat\icons\kerb_raised.png"
    inkscape:export-xdpi="96"
@@ -28,18 +26,21 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.7"
-     inkscape:cx="-31.714286"
-     inkscape:cy="259.47996"
+     inkscape:zoom="7.9195959"
+     inkscape:cx="21.099005"
+     inkscape:cy="41.293134"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer11"
      showgrid="false"
      units="px"
-     inkscape:window-width="1366"
-     inkscape:window-height="705"
+     inkscape:window-width="1920"
+     inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     inkscape:document-rotation="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:showpageshadow="false" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -53,6 +54,20 @@
     </rdf:RDF>
   </metadata>
   <g
+     inkscape:groupmode="layer"
+     id="layer11"
+     inkscape:label="Capa 3">
+    <rect
+       style="fill:#ffffff;stroke-width:0.264999;stroke-linecap:round"
+       id="rect6166"
+       width="8.362956"
+       height="8.4093065"
+       x="0.056033839"
+       y="0.03340869"
+       rx="1.302938"
+       ry="0.033407614" />
+  </g>
+  <g
      inkscape:label="Capa 1"
      inkscape:groupmode="layer"
      id="layer1"
@@ -62,19 +77,19 @@
      id="layer2"
      inkscape:label="Capa 2">
     <rect
-       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:11.83483315;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:11.8348;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect829"
-       width="104.14479"
-       height="42.982628"
-       x="83.062019"
-       y="74.999641"
-       transform="matrix(0.95733039,0.28899573,-0.43267626,0.90154936,0,0)" />
+       width="8.0413523"
+       height="3.3188262"
+       x="5.5357056"
+       y="3.8221176"
+       transform="matrix(0.95733039,0.28899572,-0.43267626,0.90154936,0,0)" />
     <rect
-       y="91.620445"
-       x="0.5761584"
-       height="43.996422"
-       width="46.491074"
+       y="5.0456114"
+       x="0.056033839"
+       height="3.3971043"
+       width="3.5897243"
        id="rect1436"
-       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:6.43127918;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+       style="opacity:1;fill:#0000ff;fill-opacity:1;stroke:none;stroke-width:6.43129;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
   </g>
 </svg>

@@ -667,7 +667,7 @@ var config = {
 		{
 			group: 'Vorades',
 			title: 'Elevades',
-			query: '(node["kerb=raised"]({{bbox}});node(w););out;',
+			query: '(node[kerb=raised]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,
@@ -683,7 +683,7 @@ var config = {
 		{
 			group: 'Vorades',
 			title: 'Rebaixades',
-			query: '(node["kerb=lowered"]({{bbox}});node(w););out;',
+			query: '(node[kerb=lowered]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_lowered.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,
@@ -699,7 +699,7 @@ var config = {
 		{
 			group: 'Vorades',
 			title: 'Anivellades',
-			query: '(node["kerb=flush"]({{bbox}});node(w););out;',
+			query: '(node[kerb=flush]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_flush.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,
@@ -715,7 +715,7 @@ var config = {
 		{
 			group: 'Vorades',
 			title: 'Falta informació',
-			query: '(node["kerb=yes"]({{bbox}});node(w););out;',
+			query: '(node[kerb=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_yes.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,

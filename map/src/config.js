@@ -650,7 +650,7 @@ var config = {
 		{
 			group: 'Altres',
 			title: 'Plaça aparcament',
-			query: '(node[capacity:disabled]({{bbox}});node(w););out;',
+			query: '(node["capacity:disabled"]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/capacity_disabled.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,

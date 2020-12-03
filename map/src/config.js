@@ -665,6 +665,22 @@ var config = {
 			}
 		},
 		{
+			group: 'Altres',
+			title: 'Obstacles',
+			query: '(node["obstacle:wheelchair"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/obstacle_wheelchair_yes.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/obstacle_wheelchair_yes.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Vorades',
 			title: 'Elevades',
 			query: '(node[kerb=raised]({{bbox}});node(w););out;',

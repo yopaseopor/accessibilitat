@@ -128,7 +128,7 @@
      inkscape:window-width="1920"
      units="px"
      showgrid="false"
-     inkscape:current-layer="layer8"
+     inkscape:current-layer="layer2"
      inkscape:document-units="mm"
      inkscape:cy="30.08647"
      inkscape:cx="45.679061"
@@ -187,21 +187,21 @@
      id="layer2"
      inkscape:groupmode="layer">
     <rect
-       style="fill:#000080;stroke-width:0.289117"
-       y="0.0075861807"
-       x="5.756721"
-       height="2.8352749"
-       width="2.7202399"
+       style="fill:#000080;stroke-width:0.289118"
+       y="0.0075861802"
+       x="3.8271179"
+       height="4.846478"
+       width="4.6498427"
        id="rect3727" />
     <text
        id="text3731"
-       y="2.6349664"
-       x="5.9213614"
-       style="font-style:normal;font-weight:normal;font-size:0.668177px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
+       y="4.3421507"
+       x="4.2834401"
+       style="font-style:normal;font-weight:normal;font-size:1.09035px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.264583"
        xml:space="preserve"><tspan
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.20726px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
-         y="2.6349664"
-         x="5.9213614"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:5.2337px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff;fill-opacity:1;stroke-width:0.264583"
+         y="4.3421507"
+         x="4.2834401"
          id="tspan3729"
          sodipodi:role="line">P</tspan></text>
   </g>

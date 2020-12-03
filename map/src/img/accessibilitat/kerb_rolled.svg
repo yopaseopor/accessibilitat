@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="kerbraised.svg">
+   sodipodi:docname="kerbrolled.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -23,11 +23,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="7.9195959"
-     inkscape:cx="39.644661"
-     inkscape:cy="29.665159"
+     inkscape:zoom="15.839192"
+     inkscape:cx="26.539251"
+     inkscape:cy="22.293364"
      inkscape:document-units="mm"
-     inkscape:current-layer="layer1"
+     inkscape:current-layer="layer2"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -35,7 +35,10 @@
      inkscape:window-height="1027"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
-     inkscape:window-maximized="1" />
+     inkscape:window-maximized="1"
+     objecttolerance="4.8"
+     guidetolerance="5.2"
+     gridtolerance="4.8" />
   <metadata
      id="metadata5">
     <rdf:RDF>
@@ -55,9 +58,38 @@
     <rect
        style="fill:#000000;stroke:#000000;stroke-width:0.265;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect833"
-       width="3.9422255"
-       height="8.2519464"
+       width="7.8009295"
+       height="5.4790244"
        x="0.13363476"
-       y="0.13363476" />
+       y="2.9065559"
+       ry="2.7395122"
+       rx="3.4577994" />
   </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Capa 2">
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect859"
+       width="4.8275557"
+       height="5.7128854"
+       x="0.016704343"
+       y="2.7896256"
+       rx="1.302938"
+       ry="0" />
+    <rect
+       style="fill:#000000;stroke:none;stroke-width:0.264999;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
+       id="rect859-4"
+       width="4.8275557"
+       height="2.7744937"
+       x="3.2322907"
+       y="5.6946087"
+       rx="0"
+       ry="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer3"
+     inkscape:label="Capa 3" />
 </svg>

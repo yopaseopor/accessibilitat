@@ -13,7 +13,7 @@
    version="1.1"
    id="svg8"
    inkscape:version="1.0.1 (3bc2e813f5, 2020-09-07)"
-   sodipodi:docname="kerbraised.svg">
+   sodipodi:docname="kerbyes.svg">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -59,5 +59,16 @@
        height="8.2519464"
        x="0.13363476"
        y="0.13363476" />
+    <text
+       xml:space="preserve"
+       style="font-size:11.2889px;line-height:6.61458px;font-family:Haettenschweiler;-inkscape-font-specification:Haettenschweiler;letter-spacing:0px;word-spacing:0px;fill:#ff0000;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="4.4099469"
+       y="8.151721"
+       id="text837"><tspan
+         sodipodi:role="line"
+         id="tspan835"
+         x="4.4099469"
+         y="8.151721"
+         style="fill:#ff0000;stroke:none;stroke-width:0.264583px">?</tspan></text>
   </g>
 </svg>

@@ -542,27 +542,7 @@ var config = {
 				return style;
 			}
 		},
-		{
-			group: 'Vies',
-			title: 'Escales',
-			query: '(way[highway=steps]({{bbox}});node(w););out;',
-			iconSrc: imgSrc + 'base/lineline.png',
-			iconStyle: 'background-color:#FF0000',
-			style: function () {
-				var fill = new ol.style.Fill({
-					color: 'rgba(255,0,0,0.4)'
-				});
-				var stroke = new ol.style.Stroke({
-					color: '#FF0000',
-					width: 5
-				});
-				var style = new ol.style.Style({
-					fill: fill,
-					stroke: stroke
-				});
-				return style;
-			}
-		},
+
 		{
 			group: 'Àrees',
 			title: 'Àrea adaptada',
@@ -658,6 +638,91 @@ var config = {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
 						src: imgSrc + 'accessibilitat/capacity_disabled.svg'
+					})
+				});
+				return style;
+			}
+		},
+				{
+			group: 'Altres',
+			title: 'Escales',
+			query: '(way[highway=steps]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/lineline.png',
+			iconStyle: 'background-color:#FF0000',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(255,0,0,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#FF0000',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vorades',
+			title: 'Elevades',
+			query: '(node["kerb=raised"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/kerb_raised.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vorades',
+			title: 'Rebaixades',
+			query: '(node["kerb=lowered"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/kerb_lowered.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/kerb_lowered.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vorades',
+			title: 'Anivellades',
+			query: '(node["kerb=flush"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/kerb_flush.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/kerb_flush.svg'
+					})
+				});
+				return style;
+			}
+		},
+		{
+			group: 'Vorades',
+			title: 'Falta informació',
+			query: '(node["kerb=yes"]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'accessibilitat/kerb_yes.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.0004,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'accessibilitat/kerb_yes.svg'
 					})
 				});
 				return style;

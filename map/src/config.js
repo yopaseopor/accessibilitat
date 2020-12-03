@@ -189,7 +189,7 @@ var config = {
 			query: '(node[wheelchair=yes][shop]({{bbox}});node[wheelchair=yes][amenity]({{bbox}});node[wheelchair=yes][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
-			scale: 0.1,
+			scale: 0.0001,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -205,7 +205,7 @@ var config = {
 			query: '(node[wheelchair=limited][shop]({{bbox}});node[wheelchair=limited][amenity]({{bbox}});node[wheelchair=limited][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
 			iconStyle: 'background-color:#714601',
-			scale: 0.04,
+			scale: 0.0004,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
@@ -221,7 +221,7 @@ var config = {
 			query: '(node[wheelchair=no][shop]({{bbox}});node[wheelchair=no][amenity]({{bbox}});node[wheelchair=no][office]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_no_shop.svg',
 			iconStyle: 'background-color:#714601',
-			scale: 0.04,
+			scale: 0.0004,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({

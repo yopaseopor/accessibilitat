@@ -187,7 +187,7 @@ var config = {
 			group: 'Wheelchair',
 			title: 'Wheelchair=yes',
 			query: '(node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox);node[wheelchair=yes][office](bbox););out meta;',
-			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.4,
 			style: function () {

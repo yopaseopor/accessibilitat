@@ -190,6 +190,26 @@ var config = {
 			iconSrc: 'https://raw.githubusercontent.com/yopaseopor/beta_preset_josm/master/ES/traffic_signs/ES/ES_B1a.png',
 			iconStyle: 'background-color:#714601',
 			scale: 0.4,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones/pal_cobertura.png'
+					})
+				});
+				return style;
+			}
+		},
+{
+			group: 'Iniciatives',
+			title: 'Cobertura 112',
+			query: 'node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox);node[wheelchair=yes][office](bbox););out meta;',
+			iconSrc: imgSrc + 'base/circle.svg',
+			scale: 0.4,
+			style: function () {
+				var style = new ol.style.Style({
+					image: new ol.style.Icon({
+						src: imgSrc + 'icones/pal_cobertura.png'
+					})
 				});
 				return style;
 			}

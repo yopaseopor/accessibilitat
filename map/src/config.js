@@ -130,7 +130,7 @@ var config = {
 			iconSrc: imgSrc + 'logo_ign.png',
 			source: new ol.source.TileWMS({
 				attributions: 'Map data &copy; <a href="https://www.openstreetmap.org/" target="_blank">OpenStreetMap Contributors</a>,Tiles &copy; IGN &mdash; Source: IGN',
-				url: 'https://www.ign.es/wms-inspire/pnoa-ma?',
+				url: 'http://www.ign.es/wms-inspire/pnoa-ma?',
 				params: {'LAYERS': 'PNOA2019'}
 			}),
 			visible: false

@@ -270,6 +270,27 @@ var config = {
 			}
 		},
 		{
+			group: 'Vies',
+			title: 'Vorera no adaptada',
+			query: '(way[wheelchair=no][highway=footway]({{bbox}});node(w););out;',
+			iconSrc: imgSrc + 'base/line.png',
+			iconStyle: 'background-color:#40E0D0',
+			style: function () {
+				var fill = new ol.style.Fill({
+					color: 'rgba(64,224,208,0.4)'
+				});
+				var stroke = new ol.style.Stroke({
+					color: '#40E0D0',
+					width: 5
+				});
+				var style = new ol.style.Style({
+					fill: fill,
+					stroke: stroke
+				});
+				return style;
+			}
+		},
+		{
 			group: 'Test',
 			title: 'Interval of years - simple',
 			query: '(nwr[~"^name:....-....$"~"."]({{bbox}});node(w););out meta;',

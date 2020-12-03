@@ -1,5 +1,10 @@
+
+
 # accessibilitat
 help to accessibility maps
+
+Based on ideas of `https://osm-catalan.github.io/osmcatmap/` and `https://github.com/Ripollx/osmcatmap2` .
+Developed with [OpenLayers](https://openlayers.org/) library  and with API from [Overpass Turbo](https://wiki.openstreetmap.org/wiki/Overpass_turbo) available on [Overpass Turbo website](https://overpass-turbo.eu/).
 
 Accessibilitat és una prova de concepte sobre el mapa personalitzable a OpenStreetMap. Consta de vàries parts:
 

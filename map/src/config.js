@@ -194,7 +194,7 @@ var config = {
 					image: new ol.style.Icon({
 						src: imgSrc + 'accessibilitat/wheelchair_yes_shop.svg',
 						scale: 0.4,
-						size: [152, 152]
+						size: [52, 52]
 					})
 				});
 				return style;
@@ -251,7 +251,7 @@ var config = {
 		{
 			group: 'Vies',
 			title: 'Vorera adaptada',
-			query: '(way[wheelchair=yes][footway=sidewalk]({{bbox}});node(w););way[wheelchair=yes][footway=sidewalk]({{bbox}});node(w););way[wheelchair=yes][footway=sidewalk]({{bbox}});node(w););out meta;',
+			query: '(way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}});way[wheelchair=yes][footway=sidewalk]({{bbox}}););out meta;',
 			iconSrc: imgSrc + 'accessibilitat/wheelchair_unknown.svg',
 			iconStyle: 'background-color:#714601',
 			scale: 0.0004,

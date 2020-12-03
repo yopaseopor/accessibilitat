@@ -199,16 +199,17 @@ var config = {
 				return style;
 			}
 		},
-{
-			group: 'Iniciatives',
-			title: 'Cobertura 112',
-			query: 'node[wheelchair=yes][shop](bbox);node[wheelchair=yes][amenity](bbox);node[wheelchair=yes][office](bbox););out meta;',
-			iconSrc: imgSrc + 'base/circle.svg',
-			scale: 0.4,
+		{
+			group: 'Wheelchair',
+			title: 'Wheelchair=limited',
+			query: '(node[wheelchair=limited][shop]({{bbox}});node[wheelchair=limited][amenity]({{bbox}});node[wheelchair=limited][office]({{bbox}}););out meta;',
+			iconSrc: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg',
+			iconStyle: 'background-color:#714601',
+			scale: 0.04,
 			style: function () {
 				var style = new ol.style.Style({
 					image: new ol.style.Icon({
-						src: imgSrc + 'icones/pal_cobertura.png'
+						src: imgSrc + 'accessibilitat/wheelchair_limited_shop.svg'
 					})
 				});
 				return style;

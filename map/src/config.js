@@ -682,7 +682,7 @@ var config = {
 		},
 		{
 			group: 'Vorades',
-			title: 'Elevades <b>1</b><a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
+			title: 'Elevades >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
 			query: '(node[kerb=raised]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
 			iconStyle: 'background-color:#714601',
@@ -698,7 +698,7 @@ var config = {
 		},
 		{
 			group: 'Vorades',
-			title: 'Rebaixades',
+			title: 'Rebaixades >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
 			query: '(node[kerb=lowered]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_lowered.svg',
 			iconStyle: 'background-color:#714601',
@@ -714,7 +714,7 @@ var config = {
 		},
 		{
 			group: 'Vorades',
-			title: 'Anivellades',
+			title: 'Anivellades >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
 			query: '(node[kerb=flush]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_flush.svg',
 			iconStyle: 'background-color:#714601',
@@ -730,7 +730,7 @@ var config = {
 		},
 		{
 			group: 'Vorades',
-			title: 'Falta informació',
+			title: 'Falta informació >> <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fmcquests%2Fmaster%2Fkerbs.json&language=ca#welcome" Test</a><b>Completar aquí</b>',
 			query: '(node[kerb=yes]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_yes.svg',
 			iconStyle: 'background-color:#714601',

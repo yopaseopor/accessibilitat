@@ -682,7 +682,7 @@ var config = {
 		},
 		{
 			group: 'Vorades',
-			title: 'Elevades <b>1</b><a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fosmlitmap%2Fmaster%2Fsrc%2Fjson%2Flit.json&language=ca#welcome"</a>',
+			title: 'Elevades <a href="https://mapcomplete.osm.be/index.html?z=\' + view.getZoom() +\'&lat=\'+ coordinateLL[1] +\'&lon=\'+ coordinateLL[0] +\'&userlayout=https%3A%2F%2Fraw.githubusercontent.com%2Fyopaseopor%2Fosmlitmap%2Fmaster%2Fsrc%2Fjson%2Flit.json&language=ca#welcome" Test</a>',
 			query: '(node[kerb=raised]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
 			iconStyle: 'background-color:#714601',

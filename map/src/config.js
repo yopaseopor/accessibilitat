@@ -681,8 +681,8 @@ var config = {
 			}
 		},
 		{
-			group: 'Vorades',
-			title: 'Elevades',
+			group: 'Vorades <b>Test</b>',
+			title: 'Elevades <b>Test</b>',
 			query: '(node[kerb=raised]({{bbox}});node(w););out;',
 			iconSrc: imgSrc + 'accessibilitat/kerb_raised.svg',
 			iconStyle: 'background-color:#714601',
